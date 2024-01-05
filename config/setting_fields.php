@@ -21,7 +21,7 @@ return [
                 'data' => 'string', // data type, string, int, boolean
                 'name' => 'footer_text', // unique name for field
                 'label' => 'Footer Text', // you know what label it is
-                'rules' => 'min:2', // validation rule of laravel
+                'rules' => '', // validation rule of laravel
                 'class' => '', // any class for input
                 'value' => 'Built with ♥ from Laravel', // default value if you want
             ],
@@ -49,7 +49,7 @@ return [
                 'label' => 'Email', // you know what label it is
                 'rules' => 'email', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => 'info@example.com', // default value if you want
+                'value' => '', // default value if you want
             ],
         ],
 
