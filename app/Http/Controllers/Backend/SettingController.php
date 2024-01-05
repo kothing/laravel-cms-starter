@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
+use Laracasts\Flash\Flash;
 
 class SettingController extends Controller
 {
@@ -67,6 +68,9 @@ class SettingController extends Controller
 
     public function store(Request $request)
     {
+        $module_title = $this->module_title;
+        $module_name = $this->module_name;
+        
         $rules = Setting::getValidationRules();
         $data = $this->validate($request, $rules);
 
@@ -77,6 +81,8 @@ class SettingController extends Controller
                 Setting::add($key, $val, Setting::getDataType($key));
             }
         }
+        
+        Flash::success("<i class='fas fa-check'></i> '".Str::singular($module_title)."' Updated Successfully")->important();
 
         return redirect()->back()->with('status', 'Settings has been saved.');
     }
