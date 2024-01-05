@@ -1,0 +1,25 @@
+{
+    "name": "localstore/comment-module",
+    "description": "Comment module for Laravel Starter. It can be used with any other Models. One to many polymorphic relation.",
+    "type": "laravel-module",
+    "version": "v1.0.0",
+    "authors": [
+        {
+            "name": "localstore",
+            "email": "localstore@local.dev"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Comment\\Providers\\CommentServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Comment\\": ""
+        }
+    }
+}

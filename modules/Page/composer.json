@@ -1,0 +1,24 @@
+{
+    "name": "{{composerVendor}}/page",
+    "description": "Page module.",
+    "type": "laravel-module",
+    "authors": [
+        {
+            "name": "LocalStore",
+            "email": "localstore@local.dev"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Page\\": ""
+        }
+    }
+}

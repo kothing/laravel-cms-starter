@@ -1,0 +1,33 @@
+{
+  "name": "localstore/laravel-installer",
+  "description": "Laravel web installer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "LocalStore",
+      "email": "localstore@local.dev"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "LocalStore\\LaravelInstaller\\": "src/"
+    },
+    "files": [
+      "src/Helpers/functions.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LocalStore\\LaravelInstaller\\Providers\\LaravelInstallerServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "stable"
+}

@@ -1,0 +1,22 @@
+{
+    "name": "localstore/category",
+    "description": "",
+    "type": "laravel-module",
+    "authors": [
+        {
+            "name": "localstore",
+            "email": "localstore@local.dev"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Category\\": ""
+        }
+    }
+}

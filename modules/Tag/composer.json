@@ -1,0 +1,23 @@
+{
+    "name": "localstore/tag",
+    "description": "",
+    "type": "laravel-module",
+    "version": "v1.0.0",
+    "authors": [
+        {
+            "name": "LocalStore",
+            "email": "localstore@local.dev"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Tag\\": ""
+        }
+    }
+}
