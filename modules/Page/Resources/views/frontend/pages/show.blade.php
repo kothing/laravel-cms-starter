@@ -36,10 +36,7 @@
             <hr>
 
             <div class="py-5 border-b">
-                <div class="flex flex-col sm:flex-row justify-between">
-                    <div class="pb-2">
-                        
-                    </div>
+                <div class="flex flex-col">
                     <div class="pb-2">
                         {{__('Created at')}}: {{$$module_name_singular->created_at->isoFormat('llll')}}
                     </div>
