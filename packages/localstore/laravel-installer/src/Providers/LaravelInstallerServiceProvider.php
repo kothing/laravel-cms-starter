@@ -58,7 +58,7 @@ class LaravelInstallerServiceProvider extends ServiceProvider
         ], 'laravel-installer');
 
         $this->publishes([
-            __DIR__.'/../Lang' => base_path('resources/lang'),
+            __DIR__.'/../Lang' => base_path('lang/vendor'),
         ], 'laravel-installer');
     }
 }
