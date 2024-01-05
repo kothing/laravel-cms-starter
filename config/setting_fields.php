@@ -47,7 +47,7 @@ return [
                 'data' => 'string', // data type, string, int, boolean
                 'name' => 'email', // unique name for field
                 'label' => 'Email', // you know what label it is
-                'rules' => 'email', // validation rule of laravel
+                'rules' => '', // validation rule of laravel
                 'class' => '', // any class for input
                 'value' => '', // default value if you want
             ],
