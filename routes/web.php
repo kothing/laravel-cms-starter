@@ -145,10 +145,10 @@ Route::group(['namespace' => 'App\Http\Controllers\Backend', 'prefix' => 'admin'
 
 /*
 *
-* Laravel FileManager Routes
+* Laravel Filemanager Routes
 *
 * --------------------------------------------------------------------
 */
-Route::group(['prefix' => 'laravel-file-manager', 'middleware' => ['web', 'auth', 'can:view_backend']], function () {
-    \Costar\LaravelFileManager\FileManager::routes();
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth', 'can:view_backend']], function () {
+    \Costar\LaravelFilemanager\Lfm::routes();
 });

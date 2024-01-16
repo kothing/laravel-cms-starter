@@ -268,7 +268,7 @@
 
 @push('after-styles')
 <!-- File Manager -->
-<link rel="stylesheet" href="{{ asset('vendor/laravel-file-manager/css/file-manager.css') }}">
+<link rel="stylesheet" href="{{ asset('vendor/laravel-filemanager/css/lfm.css') }}">
 
 <link href="https://unpkg.com/summernote@0.8.20/dist/summernote-lite.min.css" rel="stylesheet">
 <style>
@@ -287,8 +287,8 @@
 <script type="module" src="https://unpkg.com/summernote@0.8.20/dist/summernote-lite.min.js"></script>
 <script type="module">
     // Define function to open filemanager window
-    var fileManager = function(options, cb) {
-        var route_prefix = (options && options.prefix) ? options.prefix : '/laravel-file-manager';
+    var lfm = function(options, cb) {
+        var route_prefix = (options && options.prefix) ? options.prefix : '/laravel-filemanager';
         window.open(route_prefix + '?type=' + options.type || 'file', 'FileManager', 'width=900,height=600');
         window.SetUrl = cb;
     };
@@ -301,12 +301,12 @@
             tooltip: 'Insert image with filemanager',
             click: function() {
 
-                fileManager({
+                lfm({
                     type: 'image',
-                    prefix: '/laravel-file-manager'
-                }, function(fileManagerItems, path) {
-                    fileManagerItems.forEach(function(fileManagerItem) {
-                        context.invoke('insertImage', fileManagerItem.url);
+                    prefix: '/laravel-filemanager'
+                }, function(lfmItems, path) {
+                    lfmItems.forEach(function(lfmItem) {
+                        context.invoke('insertImage', lfmItem.url);
                     });
                 });
 
@@ -323,16 +323,16 @@
             ['color', ['color']],
             ['para', ['ul', 'ol', 'paragraph']],
             ['table', ['table']],
-            ['insert', ['link', 'fileManager', 'video']],
+            ['insert', ['link', 'lfm', 'video']],
             ['view', ['codeview', 'undo', 'redo', 'help']],
         ],
         buttons: {
-            fileManager: LFMButton
+            lfm: LFMButton
         }
     });
 </script>
 
-<script type="module" src="{{ asset('vendor/laravel-file-manager/js/stand-alone-button.js') }}"></script>
+<script type="module" src="{{ asset('vendor/laravel-filemanager/js/stand-alone-button.js') }}"></script>
 <script type="module">
     $('#button-image').filemanager('image');
 </script>

@@ -9,7 +9,8 @@
     @endif
     @if($item->hasChildren())
       <ul class="dropdown-menu">
-        @include(config('laravel-menu.views.bootstrap-items'), array('items' => $item->children()))
+        @include(config('laravel-menu.views.bootstrap-items'),
+array('items' => $item->children()))
       </ul>
     @endif
   </li>
