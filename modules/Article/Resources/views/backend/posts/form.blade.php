@@ -189,7 +189,7 @@
             $field_name = 'published_at';
             $field_label = __("article::$module_name.$field_name");
             $field_placeholder = $field_label;
-            $required = "required";
+            $required = "";
             ?>
             {{ html()->label($field_label, $field_name) }} {!! fielf_required($required) !!}
             {{ html()->datetime($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"]) }}

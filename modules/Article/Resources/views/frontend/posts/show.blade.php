@@ -48,7 +48,7 @@
                         {{__('Written by')}}: {{isset($$module_name_singular->created_by_alias)? $$module_name_singular->created_by_alias : $$module_name_singular->created_by_name}}
                     </div>
                     <div class="pb-2">
-                        {{__('Published at')}}: {{$$module_name_singular->published_at->isoFormat('llll')}}
+                        {{__('Created at')}}: {{$$module_name_singular->created_at->isoFormat('llll')}}
                     </div>
                 </div>
             </div>
