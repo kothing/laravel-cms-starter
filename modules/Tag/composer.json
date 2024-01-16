@@ -1,12 +1,12 @@
 {
-    "name": "localstore/tag",
+    "name": "costar/tag",
     "description": "",
     "type": "laravel-module",
     "version": "v1.0.0",
     "authors": [
         {
-            "name": "LocalStore",
-            "email": "localstore@local.dev"
+            "name": "Costar",
+            "email": "costar@local.dev"
         }
     ],
     "extra": {

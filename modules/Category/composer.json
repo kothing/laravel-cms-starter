@@ -1,11 +1,11 @@
 {
-    "name": "localstore/category",
+    "name": "costar/category",
     "description": "",
     "type": "laravel-module",
     "authors": [
         {
-            "name": "localstore",
-            "email": "localstore@local.dev"
+            "name": "costar",
+            "email": "costar@local.dev"
         }
     ],
     "extra": {
