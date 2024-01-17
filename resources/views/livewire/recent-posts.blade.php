@@ -13,7 +13,7 @@
         $details_url = route("frontend.posts.show",[encode_id($row->id), $row->slug]);
         @endphp
         <li class="border-gray-400 flex flex-row mb-4">
-            <div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none cursor-pointer bg-white rounded-md flex flex-1 items-center p-4">
+            <div class="transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg select-none bg-white rounded-md flex flex-1 items-center p-4">
                 @if($row->featured_image != "")     
                 <div class="flex flex-col h-10 justify-center items-center mr-4">
                     <a href="{{$details_url}}" class="block relative">
@@ -21,7 +21,7 @@
                     </a>
                 </div>
                 @endif
-                <div class=" pl-1">
+                <div class="pl-1">
                     <div class="font-medium">
                         <a href="{{$details_url}}">
                             {{ $row->name }}
