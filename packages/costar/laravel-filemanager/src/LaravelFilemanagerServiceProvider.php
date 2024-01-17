@@ -1,6 +1,6 @@
 <?php
 
-namespace Costar\LaravelFilemanager;
+namespace Star\LaravelFilemanager;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
@@ -39,7 +39,7 @@ class LaravelFilemanagerServiceProvider extends ServiceProvider
 
         if (config('lfm.use_package_routes')) {
             Route::group(['prefix' => 'filemanager', 'middleware' => ['web', 'auth']], function () {
-                \Costar\LaravelFilemanager\Lfm::routes();
+                \Star\LaravelFilemanager\Lfm::routes();
             });
         }
     }

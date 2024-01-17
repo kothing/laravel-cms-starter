@@ -1,6 +1,6 @@
 <?php
 
-namespace Costar\LaravelFilemanager\Events;
+namespace Star\LaravelFilemanager\Events;
 
 class FileWasUploaded
 {

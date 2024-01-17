@@ -1,6 +1,6 @@
 <?php
 
-namespace Costar\LaravelInstaller\Controllers;
+namespace Star\LaravelInstaller\Controllers;
 
 use Illuminate\Routing\Controller;
 

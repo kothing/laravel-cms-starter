@@ -1,13 +1,13 @@
 <?php
 
-namespace Costar\LaravelFilemanager;
+namespace Star\LaravelFilemanager;
 
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
-use Costar\LaravelFilemanager\Middlewares\CreateDefaultFolder;
-use Costar\LaravelFilemanager\Middlewares\MultiUser;
+use Star\LaravelFilemanager\Middlewares\CreateDefaultFolder;
+use Star\LaravelFilemanager\Middlewares\MultiUser;
 
 class Lfm
 {
@@ -285,8 +285,8 @@ class Lfm
     public static function routes()
     {
         $middleware = [ CreateDefaultFolder::class, MultiUser::class ];
-        $as = 'costar.lfm.';
-        $namespace = '\\Costar\\LaravelFilemanager\\Controllers\\';
+        $as = 'star.lfm.';
+        $namespace = '\\Star\\LaravelFilemanager\\Controllers\\';
 
         Route::group(compact('middleware', 'as', 'namespace'), function () {
 

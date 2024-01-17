@@ -3,15 +3,15 @@
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
-use Costar\LaravelFilemanager\Exceptions\DuplicateFileNameException;
-use Costar\LaravelFilemanager\Exceptions\EmptyFileException;
-use Costar\LaravelFilemanager\Exceptions\ExcutableFileException;
-use Costar\LaravelFilemanager\Exceptions\FileFailedToUploadException;
-use Costar\LaravelFilemanager\Exceptions\FileSizeExceedConfigurationMaximumException;
-use Costar\LaravelFilemanager\Exceptions\FileSizeExceedIniMaximumException;
-use Costar\LaravelFilemanager\Exceptions\InvalidMimeTypeException;
-use Costar\LaravelFilemanager\LfmPath;
-use Costar\LaravelFilemanager\LfmUploadValidator;
+use Star\LaravelFilemanager\Exceptions\DuplicateFileNameException;
+use Star\LaravelFilemanager\Exceptions\EmptyFileException;
+use Star\LaravelFilemanager\Exceptions\ExcutableFileException;
+use Star\LaravelFilemanager\Exceptions\FileFailedToUploadException;
+use Star\LaravelFilemanager\Exceptions\FileSizeExceedConfigurationMaximumException;
+use Star\LaravelFilemanager\Exceptions\FileSizeExceedIniMaximumException;
+use Star\LaravelFilemanager\Exceptions\InvalidMimeTypeException;
+use Star\LaravelFilemanager\LfmPath;
+use Star\LaravelFilemanager\LfmUploadValidator;
 
 function trans()
 {

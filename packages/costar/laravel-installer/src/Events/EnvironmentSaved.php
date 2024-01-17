@@ -1,6 +1,6 @@
 <?php
 
-namespace Costar\LaravelInstaller\Events;
+namespace Star\LaravelInstaller\Events;
 
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;

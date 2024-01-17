@@ -1,9 +1,9 @@
 <?php
 
-namespace Costar\LaravelFilemanager\Controllers;
+namespace Star\LaravelFilemanager\Controllers;
 
-use Costar\LaravelFilemanager\Lfm;
-use Costar\LaravelFilemanager\LfmPath;
+use Star\LaravelFilemanager\Lfm;
+use Star\LaravelFilemanager\LfmPath;
 
 class LfmController extends Controller
 {

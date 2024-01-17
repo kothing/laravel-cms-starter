@@ -1,14 +1,14 @@
 <?php
 
-namespace Costar\LaravelFilemanager\Controllers;
+namespace Star\LaravelFilemanager\Controllers;
 
 use Illuminate\Support\Facades\Storage;
-use Costar\LaravelFilemanager\Events\FileIsDeleting;
-use Costar\LaravelFilemanager\Events\FileWasDeleted;
-use Costar\LaravelFilemanager\Events\FolderIsDeleting;
-use Costar\LaravelFilemanager\Events\FolderWasDeleted;
-use Costar\LaravelFilemanager\Events\ImageIsDeleting;
-use Costar\LaravelFilemanager\Events\ImageWasDeleted;
+use Star\LaravelFilemanager\Events\FileIsDeleting;
+use Star\LaravelFilemanager\Events\FileWasDeleted;
+use Star\LaravelFilemanager\Events\FolderIsDeleting;
+use Star\LaravelFilemanager\Events\FolderWasDeleted;
+use Star\LaravelFilemanager\Events\ImageIsDeleting;
+use Star\LaravelFilemanager\Events\ImageWasDeleted;
 
 class DeleteController extends LfmController
 {

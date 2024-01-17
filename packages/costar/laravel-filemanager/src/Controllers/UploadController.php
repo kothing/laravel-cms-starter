@@ -1,10 +1,10 @@
 <?php
 
-namespace Costar\LaravelFilemanager\Controllers;
+namespace Star\LaravelFilemanager\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Log;
-use Costar\LaravelFilemanager\Lfm;
+use Star\LaravelFilemanager\Lfm;
 
 class UploadController extends LfmController
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Costar\LaravelFilemanager\Controllers;
+namespace Star\LaravelFilemanager\Controllers;
 
 use Intervention\Image\Facades\Image;
-use Costar\LaravelFilemanager\Events\ImageIsResizing;
-use Costar\LaravelFilemanager\Events\ImageWasResized;
+use Star\LaravelFilemanager\Events\ImageIsResizing;
+use Star\LaravelFilemanager\Events\ImageWasResized;
 
 class ResizeController extends LfmController
 {

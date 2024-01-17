@@ -1,11 +1,11 @@
 <?php
 
-namespace Costar\LaravelInstaller\Providers;
+namespace Star\LaravelInstaller\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
-use Costar\LaravelInstaller\Middleware\canInstall;
-use Costar\LaravelInstaller\Middleware\canUpdate;
+use Star\LaravelInstaller\Middleware\canInstall;
+use Star\LaravelInstaller\Middleware\canUpdate;
 
 class LaravelInstallerServiceProvider extends ServiceProvider
 {

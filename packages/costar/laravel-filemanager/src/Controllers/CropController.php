@@ -1,10 +1,10 @@
 <?php
 
-namespace Costar\LaravelFilemanager\Controllers;
+namespace Star\LaravelFilemanager\Controllers;
 
 use Intervention\Image\Facades\Image;
-use Costar\LaravelFilemanager\Events\ImageIsCropping;
-use Costar\LaravelFilemanager\Events\ImageWasCropped;
+use Star\LaravelFilemanager\Events\ImageIsCropping;
+use Star\LaravelFilemanager\Events\ImageWasCropped;
 
 class CropController extends LfmController
 {

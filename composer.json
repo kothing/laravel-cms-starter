@@ -34,9 +34,9 @@
         "spatie/laravel-medialibrary": "^10.7",
         "spatie/laravel-permission": "^5.9",
         "yajra/laravel-datatables-oracle": "^10.3",
-        "costar/laravel-installer": "*@dev",
-        "costar/laravel-filemanager": "*@dev",
-        "costar/laravel-module-manager": "*@dev"
+        "star/laravel-installer": "*@dev",
+        "star/laravel-filemanager": "*@dev",
+        "star/laravel-module-manager": "*@dev"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8",
@@ -71,17 +71,17 @@
         }
     },
     "repositories": {
-        "costar/laravel-installer": {
+        "star/laravel-installer": {
             "type": "path",
-            "url": "./packages/costar/laravel-installer"
+            "url": "./packages/star/laravel-installer"
         },
-        "costar/laravel-module-manager": {
+        "star/laravel-module-manager": {
             "type": "path",
-            "url": "./packages/costar/laravel-module-manager"
+            "url": "./packages/star/laravel-module-manager"
         },
-        "costar/laravel-filemanager": {
+        "star/laravel-filemanager": {
             "type": "path",
-            "url": "./packages/costar/laravel-filemanager"
+            "url": "./packages/star/laravel-filemanager"
         }
     },
     "scripts": {

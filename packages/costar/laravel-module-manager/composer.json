@@ -1,5 +1,5 @@
 {
-    "name": "costar/laravel-module-manager",
+    "name": "star/laravel-module-manager",
     "description": "Module Manager & Generator for Laravel Starter Kit",
     "keywords": [
         "module-manager",
@@ -10,8 +10,8 @@
     "type": "library",
     "authors": [
         {
-            "name": "costar",
-            "email": "costar@local.dev"
+            "name": "star",
+            "email": "star@local.dev"
         }
     ],
     "require": {
@@ -20,12 +20,12 @@
     "require-dev": {},
     "autoload": {
         "psr-4": {
-            "Costar\\LaravelModuleManager\\": "src"
+            "Star\\LaravelModuleManager\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Costar\\LaravelModuleManager\\Tests\\": "tests"
+            "Star\\LaravelModuleManager\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -38,10 +38,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Costar\\LaravelModuleManager\\LaravelModuleManagerServiceProvider"
+                "Star\\LaravelModuleManager\\LaravelModuleManagerServiceProvider"
             ],
             "aliases": {
-                "ModuleManager": "Costar\\LaravelModuleManager\\LaravelModuleManagerFacade"
+                "ModuleManager": "Star\\LaravelModuleManager\\LaravelModuleManagerFacade"
             }
         }
     }

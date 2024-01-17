@@ -1,6 +1,6 @@
 <?php
 
-namespace Costar\LaravelInstaller\Middleware;
+namespace Star\LaravelInstaller\Middleware;
 
 use Closure;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Costar\LaravelFilemanager\Controllers;
+namespace Star\LaravelFilemanager\Controllers;
 
 use Illuminate\Support\Facades\Storage;
 

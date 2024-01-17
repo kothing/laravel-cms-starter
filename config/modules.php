@@ -214,10 +214,10 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'costar',
+        'vendor' => 'star',
         'author' => [
-            'name' => 'Costar',
-            'email' => 'costar@locol.dev',
+            'name' => 'Star',
+            'email' => 'star@locol.dev',
         ],
         'composer-output' => false,
     ],

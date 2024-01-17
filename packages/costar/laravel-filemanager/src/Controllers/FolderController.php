@@ -1,9 +1,9 @@
 <?php
 
-namespace Costar\LaravelFilemanager\Controllers;
+namespace Star\LaravelFilemanager\Controllers;
 
-use Costar\LaravelFilemanager\Events\FolderIsCreating;
-use Costar\LaravelFilemanager\Events\FolderWasCreated;
+use Star\LaravelFilemanager\Events\FolderIsCreating;
+use Star\LaravelFilemanager\Events\FolderWasCreated;
 
 class FolderController extends LfmController
 {

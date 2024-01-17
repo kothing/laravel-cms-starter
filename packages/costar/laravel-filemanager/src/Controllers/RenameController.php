@@ -1,14 +1,14 @@
 <?php
 
-namespace Costar\LaravelFilemanager\Controllers;
+namespace Star\LaravelFilemanager\Controllers;
 
 use Illuminate\Support\Facades\Storage;
-use Costar\LaravelFilemanager\Events\FolderIsRenaming;
-use Costar\LaravelFilemanager\Events\FolderWasRenamed;
-use Costar\LaravelFilemanager\Events\FileIsRenaming;
-use Costar\LaravelFilemanager\Events\FileWasRenamed;
-use Costar\LaravelFilemanager\Events\ImageIsRenaming;
-use Costar\LaravelFilemanager\Events\ImageWasRenamed;
+use Star\LaravelFilemanager\Events\FolderIsRenaming;
+use Star\LaravelFilemanager\Events\FolderWasRenamed;
+use Star\LaravelFilemanager\Events\FileIsRenaming;
+use Star\LaravelFilemanager\Events\FileWasRenamed;
+use Star\LaravelFilemanager\Events\ImageIsRenaming;
+use Star\LaravelFilemanager\Events\ImageWasRenamed;
 
 class RenameController extends LfmController
 {

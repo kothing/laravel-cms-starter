@@ -1,12 +1,12 @@
 {
-    "name": "costar/article-module",
+    "name": "star/article-module",
     "description": "Article module with Posts, Categories, Tags, Comments.",
     "type": "laravel-module",
     "version": "v1.0.0",
     "authors": [
         {
-            "name": "costar",
-            "email": "costar@local.dev"
+            "name": "star",
+            "email": "star@local.dev"
         }
     ],
     "extra": {

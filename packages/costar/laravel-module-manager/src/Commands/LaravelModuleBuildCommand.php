@@ -1,6 +1,6 @@
 <?php
 
-namespace Costar\LaravelModuleManager\Commands;
+namespace Star\LaravelModuleManager\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;

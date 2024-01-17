@@ -1,12 +1,12 @@
 <?php
 
-namespace Costar\LaravelFilemanager\Controllers;
+namespace Star\LaravelFilemanager\Controllers;
 
 use Illuminate\Support\Facades\Storage;
-use Costar\LaravelFilemanager\Events\FileIsMoving;
-use Costar\LaravelFilemanager\Events\FileWasMoving;
-use Costar\LaravelFilemanager\Events\FolderIsMoving;
-use Costar\LaravelFilemanager\Events\FolderWasMoving;
+use Star\LaravelFilemanager\Events\FileIsMoving;
+use Star\LaravelFilemanager\Events\FileWasMoving;
+use Star\LaravelFilemanager\Events\FolderIsMoving;
+use Star\LaravelFilemanager\Events\FolderWasMoving;
 
 class ItemsController extends LfmController
 {

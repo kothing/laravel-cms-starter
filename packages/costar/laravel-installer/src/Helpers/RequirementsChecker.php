@@ -1,6 +1,6 @@
 <?php
 
-namespace Costar\LaravelInstaller\Helpers;
+namespace Star\LaravelInstaller\Helpers;
 
 class RequirementsChecker
 {

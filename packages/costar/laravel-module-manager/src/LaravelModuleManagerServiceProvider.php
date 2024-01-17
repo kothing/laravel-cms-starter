@@ -1,10 +1,10 @@
 <?php
 
-namespace Costar\LaravelModuleManager;
+namespace Star\LaravelModuleManager;
 
 use Illuminate\Support\ServiceProvider;
-use Costar\LaravelModuleManager\Commands\LaravelModuleBuildCommand;
-use Costar\LaravelModuleManager\Commands\TestCommand;
+use Star\LaravelModuleManager\Commands\LaravelModuleBuildCommand;
+use Star\LaravelModuleManager\Commands\TestCommand;
 
 class LaravelModuleManagerServiceProvider extends ServiceProvider
 {

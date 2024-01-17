@@ -1,14 +1,14 @@
 <?php
 
-namespace Costar\LaravelInstaller\Controllers;
+namespace Star\LaravelInstaller\Controllers;
 
 use Illuminate\Routing\Controller;
-use Costar\LaravelInstaller\Helpers\DatabaseManager;
-use Costar\LaravelInstaller\Helpers\InstalledFileManager;
+use Star\LaravelInstaller\Helpers\DatabaseManager;
+use Star\LaravelInstaller\Helpers\InstalledFileManager;
 
 class UpdateController extends Controller
 {
-    use \Costar\LaravelInstaller\Helpers\MigrationsHelper;
+    use \Star\LaravelInstaller\Helpers\MigrationsHelper;
 
     /**
      * Display the updater welcome page.

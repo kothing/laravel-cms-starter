@@ -1,6 +1,6 @@
 <?php
 
-namespace Costar\LaravelModuleManager;
+namespace Star\LaravelModuleManager;
 
 class LaravelModuleManager
 {

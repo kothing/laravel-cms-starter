@@ -1,10 +1,10 @@
 <?php
 
-namespace Costar\LaravelFilemanager\Middlewares;
+namespace Star\LaravelFilemanager\Middlewares;
 
 use Closure;
-use Costar\LaravelFilemanager\Lfm;
-use Costar\LaravelFilemanager\LfmPath;
+use Star\LaravelFilemanager\Lfm;
+use Star\LaravelFilemanager\LfmPath;
 
 class CreateDefaultFolder
 {

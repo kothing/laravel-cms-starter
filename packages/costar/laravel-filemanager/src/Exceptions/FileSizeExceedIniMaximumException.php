@@ -1,6 +1,6 @@
 <?php
 
-namespace Costar\LaravelFilemanager\Exceptions;
+namespace Star\LaravelFilemanager\Exceptions;
 
 class FileSizeExceedIniMaximumException extends \Exception
 {

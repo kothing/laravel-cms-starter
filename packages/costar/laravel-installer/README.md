@@ -3,7 +3,7 @@
 From your projects root folder in terminal run:
 
 ```php
-composer require costar/laravel-installer
+composer require star/laravel-installer
 ```
 
 Publish the packages views, config file, assets, and language files by running the following from your projects root folder:

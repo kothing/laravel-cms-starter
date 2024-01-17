@@ -1,5 +1,5 @@
 {
-    "name": "costar/laravel-filemanager",
+    "name": "star/laravel-filemanager",
     "description": "A file upload/editor intended for use with Laravel 5 to 10 and CKEditor / TinyMCE",
     "license": "MIT",
     "keywords": [
@@ -12,8 +12,8 @@
     ],
     "authors": [
         {
-            "name": "costar",
-            "email": "costar@local.dev"
+            "name": "star",
+            "email": "star@local.dev"
         }
     ],
     "require": {
@@ -39,7 +39,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Costar\\LaravelFilemanager\\": "src/"
+            "Star\\LaravelFilemanager\\": "src/"
         }
     },
     "autoload-dev": {
@@ -50,7 +50,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Costar\\LaravelFilemanager\\LaravelFilemanagerServiceProvider"
+                "Star\\LaravelFilemanager\\LaravelFilemanagerServiceProvider"
             ],
             "aliases": {}
         }

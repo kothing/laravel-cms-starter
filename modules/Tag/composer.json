@@ -1,12 +1,12 @@
 {
-    "name": "costar/tag",
+    "name": "star/tag",
     "description": "",
     "type": "laravel-module",
     "version": "v1.0.0",
     "authors": [
         {
-            "name": "Costar",
-            "email": "costar@local.dev"
+            "name": "Star",
+            "email": "star@local.dev"
         }
     ],
     "extra": {

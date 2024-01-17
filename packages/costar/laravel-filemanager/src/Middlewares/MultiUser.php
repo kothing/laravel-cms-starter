@@ -1,10 +1,10 @@
 <?php
 
-namespace Costar\LaravelFilemanager\Middlewares;
+namespace Star\LaravelFilemanager\Middlewares;
 
 use Closure;
 use Illuminate\Support\Str;
-use Costar\LaravelFilemanager\Lfm;
+use Star\LaravelFilemanager\Lfm;
 
 class MultiUser
 {

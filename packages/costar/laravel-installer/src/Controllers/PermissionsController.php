@@ -1,9 +1,9 @@
 <?php
 
-namespace Costar\LaravelInstaller\Controllers;
+namespace Star\LaravelInstaller\Controllers;
 
 use Illuminate\Routing\Controller;
-use Costar\LaravelInstaller\Helpers\PermissionsChecker;
+use Star\LaravelInstaller\Helpers\PermissionsChecker;
 
 class PermissionsController extends Controller
 {

@@ -1,11 +1,11 @@
 {
-    "name": "costar/laravel-installer",
+    "name": "star/laravel-installer",
     "description": "Laravel web installer",
     "license": "MIT",
     "authors": [
         {
-            "name": "Costar",
-            "email": "costar@local.dev"
+            "name": "Star",
+            "email": "star@local.dev"
         }
     ],
     "require": {
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Costar\\LaravelInstaller\\": "src/"
+            "Star\\LaravelInstaller\\": "src/"
         },
         "files": [
             "src/Helpers/functions.php"
@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Costar\\LaravelInstaller\\Providers\\LaravelInstallerServiceProvider"
+                "Star\\LaravelInstaller\\Providers\\LaravelInstallerServiceProvider"
             ]
         }
     },

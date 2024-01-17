@@ -1,14 +1,14 @@
 <?php
 
-namespace Costar\LaravelInstaller\Controllers;
+namespace Star\LaravelInstaller\Controllers;
 
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\DB;
-use Costar\LaravelInstaller\Events\EnvironmentSaved;
-use Costar\LaravelInstaller\Helpers\EnvironmentManager;
+use Star\LaravelInstaller\Events\EnvironmentSaved;
+use Star\LaravelInstaller\Helpers\EnvironmentManager;
 use Validator;
 
 class EnvironmentController extends Controller
@@ -112,7 +112,7 @@ class EnvironmentController extends Controller
     }
 
     /**
-     * TODO: We can remove this code if PR will be merged: https://github.com/Costar/LaravelInstaller/pull/162
+     * TODO: We can remove this code if PR will be merged: https://github.com/Star/LaravelInstaller/pull/162
      * Validate database connection with user credentials (Form Wizard).
      *
      * @param  Request  $request

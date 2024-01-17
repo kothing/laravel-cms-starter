@@ -4,9 +4,9 @@ namespace Tests;
 
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
-use Costar\LaravelFilemanager\Lfm;
-use Costar\LaravelFilemanager\LfmItem;
-use Costar\LaravelFilemanager\LfmPath;
+use Star\LaravelFilemanager\Lfm;
+use Star\LaravelFilemanager\LfmItem;
+use Star\LaravelFilemanager\LfmPath;
 
 class LfmItemTest extends TestCase
 {

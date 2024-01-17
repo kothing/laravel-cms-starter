@@ -1,15 +1,15 @@
 <?php
 
-namespace Costar\LaravelFilemanager;
+namespace Star\LaravelFilemanager;
 
 use Illuminate\Container\Container;
 use Intervention\Image\Facades\Image;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
-use Costar\LaravelFilemanager\Events\FileIsUploading;
-use Costar\LaravelFilemanager\Events\FileWasUploaded;
-use Costar\LaravelFilemanager\Events\ImageIsUploading;
-use Costar\LaravelFilemanager\Events\ImageWasUploaded;
-use Costar\LaravelFilemanager\LfmUploadValidator;
+use Star\LaravelFilemanager\Events\FileIsUploading;
+use Star\LaravelFilemanager\Events\FileWasUploaded;
+use Star\LaravelFilemanager\Events\ImageIsUploading;
+use Star\LaravelFilemanager\Events\ImageWasUploaded;
+use Star\LaravelFilemanager\LfmUploadValidator;
 
 class LfmPath
 {

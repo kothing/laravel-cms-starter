@@ -1,11 +1,11 @@
 <?php
 
-namespace Costar\LaravelModuleManager;
+namespace Star\LaravelModuleManager;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Costar\LaravelModuleManager\Skeleton\SkeletonClass
+ * @see \Star\LaravelModuleManager\Skeleton\SkeletonClass
  */
 class LaravelModuleManagerFacade extends Facade
 {
