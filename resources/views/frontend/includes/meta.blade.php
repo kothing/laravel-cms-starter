@@ -55,5 +55,5 @@ $meta_page_type = 'website';
 -->
 
 <!--canonical link-->
-<meta name="generator" content="Laravel Starter - A modular CMS starter application built with Laravel 10.x." />
+<meta name="generator" content="Laravel CMS Starter - A modular CMS starter application built with Laravel 10.x." />
 <link rel="canonical" href="{{url()->full()}}">
