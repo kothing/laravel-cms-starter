@@ -3,3 +3,16 @@
 @import 'tailwindcss/utilities';
 
 @import "../vendors/fontawesome-free/css/all.min.css";
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b3b3b3;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e4e7eb;
+}
