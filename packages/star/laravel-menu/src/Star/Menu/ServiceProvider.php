@@ -19,8 +19,8 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/settings.php', 'laravel-menu.settings');
-        $this->mergeConfigFrom(__DIR__.'/../config/views.php', 'laravel-menu.views');
+        $this->mergeConfigFrom(__DIR__.'/../../config/settings.php', 'laravel-menu.settings');
+        $this->mergeConfigFrom(__DIR__.'/../../config/views.php', 'laravel-menu.views');
 
         $this->app->singleton(Menu::class, function ($app) {
             return new Menu();
@@ -35,7 +35,7 @@ class ServiceProvider extends BaseServiceProvider
     // Patterns and Replace string for lm-endattr
     // Remove with next major version
     const LM_ENDATTRS_PATTERN = '/(?<!\w)(\s*)@lm-endattrs(\s*)/';
-    const LM_ENDATTRS_REPLACE = '$1<?php echo \Menu\Builder::mergeStatic(ob_get_clean(), $lm_attrs); ?>$2';
+    const LM_ENDATTRS_REPLACE = '$1<?php echo \Star\Menu\Builder::mergeStatic(ob_get_clean(), $lm_attrs); ?>$2';
 
     /*
      * Extending Blade engine. Remove with next major version
@@ -78,7 +78,7 @@ class ServiceProvider extends BaseServiceProvider
          * converts it into a normal array and merges it with others.
          */
         Blade::directive('lm_endattrs', function ($expression) {
-            return '<?php echo \Menu\Builder::mergeStatic(ob_get_clean(), $lm_attrs); ?>';
+            return '<?php echo \Star\Menu\Builder::mergeStatic(ob_get_clean(), $lm_attrs); ?>';
         });
 
         Blade::directive('data_toggle_attribute', function ($expression) {
@@ -98,8 +98,8 @@ class ServiceProvider extends BaseServiceProvider
 
         $this->publishes([
             __DIR__.'/resources/views' => base_path('resources/views/vendor/laravel-menu'),
-            __DIR__.'/../config/settings.php' => config_path('laravel-menu/settings.php'),
-            __DIR__.'/../config/views.php' => config_path('laravel-menu/views.php'),
+            __DIR__.'/../../config/settings.php' => config_path('laravel-menu/settings.php'),
+            __DIR__.'/../../config/views.php' => config_path('laravel-menu/views.php'),
         ]);
     }
 

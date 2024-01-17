@@ -83,7 +83,7 @@
             "type": "path",
             "url": "./packages/star/laravel-filemanager"
         },
-        "costar/laravel-menu": {
+        "star/laravel-menu": {
             "type": "path",
             "url": "./packages/star/laravel-menu"
         }
