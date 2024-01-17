@@ -42,25 +42,14 @@
             </div>
 
             <nav class="relative flex flex-wrap justify-center gap-8 p-8 text-sm font-bold border-2 border-black rounded-xl">
-                <a class="hover:opacity-75" href="#" target="_blank" rel="noopener noreferrer">
+                <a class="hover:opacity-75" href="https://laravel.com/" target="_blank" rel="noopener noreferrer">
                     Laravel
                 </a>
 
-                <a class="hover:opacity-75" href="/blog" target="_blank" rel="noopener noreferrer">
-                    Blog
-                </a>
-
-                <a class="hover:opacity-75" href="/portfolio" target="_blank" rel="noopener noreferrer">
-                    Portfolio
+                <a class="hover:opacity-75" href="https://laravel.com/docs" target="_blank" rel="noopener noreferrer">
+                    Laravel doc
                 </a>
             </nav>
-
-            <p class="max-w-lg mx-auto text-xs text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, natus
-                tempore illo laborum nam, modi quam sequi amet quo quasi impedit iure
-                eum similique pariatur alias exercitationem, porro perspiciatis esse.
-                Corporis odit consequatur sint sequi.
-            </p>
 
             <p class="text-xs font-medium">
                 &copy; {{ app_name() }}, {!! setting('footer_text') !!}
