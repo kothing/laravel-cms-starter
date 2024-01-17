@@ -42,18 +42,6 @@ trait PostPresenter
         return $this->published_at->isoFormat('llll');
     }
 
-    public function getPublishedAtFormattedBengaliAttribute()
-    {
-        $diff = Carbon::now()->diffInHours($this->published_at);
-
-        if ($diff < 24) {
-            return $this->published_at->diffForHumans();
-        }
-        $date_string = $this->published_at->isoFormat('llll');
-
-        return en2bnDate($date_string);
-    }
-
     public function getStatusFormattedAttribute()
     {
         switch ($this->status) {
