@@ -105,8 +105,8 @@ $notifications_latest = optional($notifications)->take(5);
             </ol>
         </nav>
         <div class="d-flex flex-row float-end">
-            <div class="">{{ date_today() }}&nbsp;</div>
-            <div id="liveClock" class="clock" onload="showTime()"></div>
+            <div class="date_today">{{ date_today() }}&nbsp;</div>
+            <div class="clock" id="liveClock"></div>
             <script>
                 function showTime() {
                     const date = new Date();
@@ -114,23 +114,12 @@ $notifications_latest = optional($notifications)->take(5);
                     let minutes = date.getMinutes();
                     let seconds = date.getSeconds();
 
-                    const session = hours >= 12 ? "pm" : "am";
-
-                    hours = hours % 12;
-                    hours = hours ? hours : 12;
                     minutes = minutes < 10 ? "0" + minutes : minutes;
                     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-                    const locale = document.getElementsByTagName("html")[0].getAttribute("lang");
-                    const time =
-                        hours.toLocaleString(locale) +
-                        ":" +
-                        minutes.toLocaleString(locale) +
-                        ":" +
-                        seconds.toLocaleString(locale) +
-                        " " +
-                        session.toLocaleString(locale);
-                    document.getElementById("liveClock").innerText = time;
+                    // const locale = document.getElementsByTagName("html")[0].getAttribute("lang");
+                    const time = hours.toLocaleString() + ":" + minutes.toLocaleString() + ":" + seconds.toLocaleString();
+
                     document.getElementById("liveClock").textContent = time;
 
                     setTimeout(showTime, 1000);
