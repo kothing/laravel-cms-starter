@@ -1,0 +1,35 @@
+{
+    "name": "star/laravel-menu",
+    "description": "A quick way to create menus in Laravel",
+    "keywords": [
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "Star",
+            "email": "star@local.dev"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": ">=5.0",
+        "illuminate/view": ">=5.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Star\\Menu\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Star\\Menu\\ServiceProvider"
+            ],
+            "aliases": {
+                "Menu": "Star\\Menu\\Facade"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}

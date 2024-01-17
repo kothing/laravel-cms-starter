@@ -24,7 +24,6 @@
         "laravel/slack-notification-channel": "^2.5",
         "laravel/socialite": "^5.6",
         "laravel/tinker": "^2.8",
-        "lavary/laravel-menu": "^1.8",
         "livewire/livewire": "^3.0",
         "nwidart/laravel-modules": "^10.0",
         "predis/predis": "^2.1",
@@ -36,7 +35,8 @@
         "yajra/laravel-datatables-oracle": "^10.3",
         "star/laravel-installer": "*@dev",
         "star/laravel-filemanager": "*@dev",
-        "star/laravel-module-manager": "*@dev"
+        "star/laravel-module-manager": "*@dev",
+        "star/laravel-menu": "*@dev"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8",
