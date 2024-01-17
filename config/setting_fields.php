@@ -54,87 +54,6 @@ return [
         ],
 
     ],
-    'social' => [
-        'title' => 'Social Profiles',
-        'desc' => 'Link of all the online/social profiles.',
-        'icon' => 'fas fa-users',
-
-        'elements' => [
-            [
-                'type' => 'text', // input fields type
-                'data' => 'string', // data type, string, int, boolean
-                'name' => 'website_url', // unique name for field
-                'label' => 'Website URL', // you know what label it is
-                'rules' => '', // validation rule of laravel
-                'class' => '', // any class for input
-                'value' => '', // default value if you want
-            ],
-            [
-                'type' => 'text', // input fields type
-                'data' => 'string', // data type, string, int, boolean
-                'name' => 'facebook_url', // unique name for field
-                'label' => 'Facebook Page URL', // you know what label it is
-                'rules' => '', // validation rule of laravel
-                'class' => '', // any class for input
-                'value' => '#', // default value if you want
-            ],
-            [
-                'type' => 'text', // input fields type
-                'data' => 'string', // data type, string, int, boolean
-                'name' => 'twitter_url', // unique name for field
-                'label' => 'Twitter Profile URL', // you know what label it is
-                'rules' => '', // validation rule of laravel
-                'class' => '', // any class for input
-                'value' => '', // default value if you want
-            ],
-            [
-                'type' => 'text', // input fields type
-                'data' => 'string', // data type, string, int, boolean
-                'name' => 'instagram_url', // unique name for field
-                'label' => 'Instagram Account URL', // you know what label it is
-                'rules' => '', // validation rule of laravel
-                'class' => '', // any class for input
-                'value' => '', // default value if you want
-            ],
-            [
-                'type' => 'text', // input fields type
-                'data' => 'string', // data type, string, int, boolean
-                'name' => 'youtube_url', // unique name for field
-                'label' => 'Youtube Channel URL', // you know what label it is
-                'rules' => '', // validation rule of laravel
-                'class' => '', // any class for input
-                'value' => '', // default value if you want
-            ],
-            [
-                'type' => 'text', // input fields type
-                'data' => 'string', // data type, string, int, boolean
-                'name' => 'linkedin_url', // unique name for field
-                'label' => 'LinkedIn URL', // you know what label it is
-                'rules' => '', // validation rule of laravel
-                'class' => '', // any class for input
-                'value' => '#', // default value if you want
-            ],
-            [
-                'type' => 'text', // input fields type
-                'data' => 'string', // data type, string, int, boolean
-                'name' => 'whatsapp_url', // unique name for field
-                'label' => 'WhatsApp URL', // you know what label it is
-                'rules' => '', // validation rule of laravel
-                'class' => '', // any class for input
-                'value' => '#', // default value if you want
-            ],
-            [
-                'type' => 'text', // input fields type
-                'data' => 'string', // data type, string, int, boolean
-                'name' => 'messenger_url', // unique name for field
-                'label' => 'Messenger URL', // you know what label it is
-                'rules' => '', // validation rule of laravel
-                'class' => '', // any class for input
-                'value' => '#', // default value if you want
-            ],
-        ],
-
-    ],
     'meta' => [
         'title' => 'Meta ',
         'desc' => 'Application Meta Data',
@@ -241,6 +160,87 @@ return [
                 'value' => '', // default value if you want
                 'help' => 'Paste the code in this field.', // Help text for the input field.
                 'display' => 'raw', // Help text for the input field.
+            ],
+        ],
+
+    ],
+    'social' => [
+        'title' => 'Social Profiles',
+        'desc' => 'Link of all the online/social profiles.',
+        'icon' => 'fas fa-users',
+
+        'elements' => [
+            [
+                'type' => 'text', // input fields type
+                'data' => 'string', // data type, string, int, boolean
+                'name' => 'website_url', // unique name for field
+                'label' => 'Website URL', // you know what label it is
+                'rules' => '', // validation rule of laravel
+                'class' => '', // any class for input
+                'value' => '', // default value if you want
+            ],
+            [
+                'type' => 'text', // input fields type
+                'data' => 'string', // data type, string, int, boolean
+                'name' => 'facebook_url', // unique name for field
+                'label' => 'Facebook Page URL', // you know what label it is
+                'rules' => '', // validation rule of laravel
+                'class' => '', // any class for input
+                'value' => '#', // default value if you want
+            ],
+            [
+                'type' => 'text', // input fields type
+                'data' => 'string', // data type, string, int, boolean
+                'name' => 'twitter_url', // unique name for field
+                'label' => 'Twitter Profile URL', // you know what label it is
+                'rules' => '', // validation rule of laravel
+                'class' => '', // any class for input
+                'value' => '', // default value if you want
+            ],
+            [
+                'type' => 'text', // input fields type
+                'data' => 'string', // data type, string, int, boolean
+                'name' => 'instagram_url', // unique name for field
+                'label' => 'Instagram Account URL', // you know what label it is
+                'rules' => '', // validation rule of laravel
+                'class' => '', // any class for input
+                'value' => '', // default value if you want
+            ],
+            [
+                'type' => 'text', // input fields type
+                'data' => 'string', // data type, string, int, boolean
+                'name' => 'youtube_url', // unique name for field
+                'label' => 'Youtube Channel URL', // you know what label it is
+                'rules' => '', // validation rule of laravel
+                'class' => '', // any class for input
+                'value' => '', // default value if you want
+            ],
+            [
+                'type' => 'text', // input fields type
+                'data' => 'string', // data type, string, int, boolean
+                'name' => 'linkedin_url', // unique name for field
+                'label' => 'LinkedIn URL', // you know what label it is
+                'rules' => '', // validation rule of laravel
+                'class' => '', // any class for input
+                'value' => '#', // default value if you want
+            ],
+            [
+                'type' => 'text', // input fields type
+                'data' => 'string', // data type, string, int, boolean
+                'name' => 'whatsapp_url', // unique name for field
+                'label' => 'WhatsApp URL', // you know what label it is
+                'rules' => '', // validation rule of laravel
+                'class' => '', // any class for input
+                'value' => '#', // default value if you want
+            ],
+            [
+                'type' => 'text', // input fields type
+                'data' => 'string', // data type, string, int, boolean
+                'name' => 'messenger_url', // unique name for field
+                'label' => 'Messenger URL', // you know what label it is
+                'rules' => '', // validation rule of laravel
+                'class' => '', // any class for input
+                'value' => '#', // default value if you want
             ],
         ],
 
