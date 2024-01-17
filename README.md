@@ -1,8 +1,8 @@
-# CMS-laravel-starter
+# laravel-cms-starter
 
-A modular CMS starter  application built with Laravel 10.x.
+A modular CMS starter application built with Laravel 10.x.
 
-`Laravel Starter` is a simple starter CMS based on Laravel 10.x. Most of the commonly needed features of an application like `Authentication`, `Authorisation`, `User` and `Role management`, `Application Backend`, `Backup`, `Log viewer` are available here. It is modular, so you may use this project as a base and build your own modules. A module can be used in any `Laravel Starter` based projects.
+`Laravel CMS Starter` is a simple starter CMS based on Laravel 10.x. Most of the commonly needed features of an application like `Authentication`, `Authorisation`, `User` and `Role management`, `Application Backend`, `Backup`, `Log viewer` are available here. It is modular, so you may use this project as a base and build your own modules. A module can be used in any `Laravel Starter` based projects.
 
 **Screenshots**   
 
