@@ -12,7 +12,7 @@ return [
     'namespace' => 'Modules',
 
     'stubs' => [
-        'path' => base_path('stubs/laravel-starter-stubs'),
+        'path' => base_path('stubs/star-stubs'),
     ],
 
     'module' => [
