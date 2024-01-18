@@ -2,10 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@import "frontend_variables";
-
-@import "frontend_custom";
-
 @import "../vendors/fontawesome-free/css/all.min.css";
 
 @import "../vendors/coreui/scss/style.scss";
+
+@import "frontend_variables";
+
+@import "frontend_custom";
