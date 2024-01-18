@@ -1,6 +1,6 @@
 <?php
 
-namespace Nwidart\Modules;
+namespace Star\Modules;
 
 use Illuminate\Cache\CacheManager;
 use Illuminate\Container\Container;
@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
 use Illuminate\Translation\Translator;
-use Nwidart\Modules\Contracts\ActivatorInterface;
+use Star\Modules\Contracts\ActivatorInterface;
 
 abstract class Module
 {

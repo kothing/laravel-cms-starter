@@ -1,0 +1,55 @@
+{
+    "name": "star/log-viewer",
+    "description": "Provides a Log Viewer for Laravel",
+    "keywords": [
+        "log-viewer"
+    ],
+    "authors": [],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "psr/log": "^1.0|^2.0|^3.0"
+    },
+    "require-dev": {
+        "laravel/framework": "^10.0",
+        "mockery/mockery": "^1.5.1",
+        "orchestra/testbench-core": "^8.0",
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Star\\LogViewer\\": "src/"
+        },
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Star\\LogViewer\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --colors=always",
+        "test:dox": "phpunit --testdox --colors=always",
+        "test:cov": "phpunit --coverage-html coverage"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "10.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Star\\LogViewer\\LogViewerServiceProvider",
+                "Star\\LogViewer\\Providers\\DeferredServicesProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

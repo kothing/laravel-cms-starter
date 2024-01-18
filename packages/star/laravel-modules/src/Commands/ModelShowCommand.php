@@ -1,6 +1,6 @@
 <?php
 
-namespace Nwidart\Modules\Commands;
+namespace Star\Modules\Commands;
 
 use Illuminate\Database\Console\ShowModelCommand;
 use Symfony\Component\Console\Attribute\AsCommand;

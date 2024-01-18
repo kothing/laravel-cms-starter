@@ -1,15 +1,15 @@
 <?php
 
-namespace Nwidart\Modules\Commands;
+namespace Star\Modules\Commands;
 
 use ErrorException;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Support\Str;
-use Nwidart\Modules\Contracts\RepositoryInterface;
-use Nwidart\Modules\Module;
-use Nwidart\Modules\Support\Config\GenerateConfigReader;
-use Nwidart\Modules\Traits\ModuleCommandTrait;
+use Star\Modules\Contracts\RepositoryInterface;
+use Star\Modules\Module;
+use Star\Modules\Support\Config\GenerateConfigReader;
+use Star\Modules\Traits\ModuleCommandTrait;
 use RuntimeException;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;

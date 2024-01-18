@@ -1,0 +1,70 @@
+{
+    "name": "star/laravel-datatables-oracle",
+    "description": "jQuery DataTables API for Laravel",
+    "keywords": [
+        "laravel",
+        "dataTables"
+    ],
+    "license": "MIT",
+    "authors": [],
+    "require": {
+        "php": "^8.0.2",
+        "illuminate/database": "^9|^10",
+        "illuminate/filesystem": "^9|^10",
+        "illuminate/http": "^9|^10",
+        "illuminate/support": "^9|^10",
+        "illuminate/view": "^9|^10"
+    },
+    "require-dev": {
+        "algolia/algoliasearch-client-php": "^3.4",
+        "laravel/scout": "^10.5",
+        "meilisearch/meilisearch-php": "^1.4",
+        "larastan/larastan": "^2.4",
+        "orchestra/testbench": "^8",
+        "star/laravel-datatables-html": "^9.3.4|^10"
+    },
+    "suggest": {
+        "star/laravel-datatables-export": "Plugin for server-side exporting using livewire and queue worker.",
+        "star/laravel-datatables-buttons": "Plugin for server-side exporting of dataTables.",
+        "star/laravel-datatables-html": "Plugin for server-side HTML builder of dataTables.",
+        "star/laravel-datatables-fractal": "Plugin for server-side response using Fractal.",
+        "star/laravel-datatables-editor": "Plugin to use DataTables Editor (requires a license)."
+    },
+    "autoload": {
+        "psr-4": {
+            "Star\\DataTables\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Star\\DataTables\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "10.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Star\\DataTables\\DataTablesServiceProvider"
+            ],
+            "aliases": {
+                "DataTables": "Star\\DataTables\\Facades\\DataTables"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

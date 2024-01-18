@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Modules\Comment\Notifications\NewCommentAdded;
 use Spatie\Activitylog\Models\Activity;
-use Yajra\DataTables\DataTables;
+use Star\DataTables\DataTables;
 
 class CommentsController extends BackendBaseController
 {

@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LogViewer - Created by ARCANEDEV</title>
+    <title>LogViewer</title>
     <meta name="description" content="LogViewer">
-    <meta name="author" content="ARCANEDEV">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.5/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
@@ -316,9 +315,6 @@
         <div class="container">
             <p class="text-muted pull-left">
                 LogViewer - <span class="label label-info">version {{ log_viewer()->version() }}</span>
-            </p>
-            <p class="text-muted pull-right">
-                Created with <i class="fa fa-heart"></i> by ARCANEDEV <sup>&copy;</sup>
             </p>
         </div>
     </footer>

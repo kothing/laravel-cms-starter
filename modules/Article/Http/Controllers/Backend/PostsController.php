@@ -15,7 +15,7 @@ use Modules\Article\Events\PostUpdated;
 use Modules\Article\Http\Requests\Backend\PostsRequest;
 use Modules\Category\Models\Category;
 use Spatie\Activitylog\Models\Activity;
-use Yajra\DataTables\DataTables;
+use Star\DataTables\DataTables;
 
 class PostsController extends Controller
 {

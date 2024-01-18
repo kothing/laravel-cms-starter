@@ -1,6 +1,6 @@
 <?php
 
-namespace Nwidart\Modules\Facades;
+namespace Star\Modules\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -8,15 +8,15 @@ use Illuminate\Support\Facades\Facade;
  * @method  array all()
  * @method  array getCached()
  * @method  array scan()
- * @method  \Nwidart\Modules\Collection toCollection()
+ * @method  \Star\Modules\Collection toCollection()
  * @method  array getScanPaths()
  * @method  array allEnabled()
  * @method  array allDisabled()
  * @method  int count()
  * @method  array getOrdered($direction = 'asc')
  * @method  array getByStatus($status)
- * @method  \Nwidart\Modules\Module find(string $name)
- * @method  \Nwidart\Modules\Module findOrFail(string $name)
+ * @method  \Star\Modules\Module find(string $name)
+ * @method  \Star\Modules\Module findOrFail(string $name)
  * @method  string getModulePath($moduleName)
  * @method  \Illuminate\Filesystem\Filesystem getFiles()
  * @method  mixed config(string $key, $default = NULL)

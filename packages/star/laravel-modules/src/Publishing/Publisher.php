@@ -1,11 +1,11 @@
 <?php
 
-namespace Nwidart\Modules\Publishing;
+namespace Star\Modules\Publishing;
 
 use Illuminate\Console\Command;
-use Nwidart\Modules\Contracts\PublisherInterface;
-use Nwidart\Modules\Contracts\RepositoryInterface;
-use Nwidart\Modules\Module;
+use Star\Modules\Contracts\PublisherInterface;
+use Star\Modules\Contracts\RepositoryInterface;
+use Star\Modules\Module;
 
 abstract class Publisher implements PublisherInterface
 {
@@ -87,7 +87,7 @@ abstract class Publisher implements PublisherInterface
     /**
      * Get module instance.
      *
-     * @return \Nwidart\Modules\Module
+     * @return \Star\Modules\Module
      */
     public function getModule()
     {

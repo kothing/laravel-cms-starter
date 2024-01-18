@@ -15,28 +15,28 @@
     "type": "project",
     "require": {
         "php": "^8.1",
-        "arcanedev/log-viewer": "^10.0",
-        "guzzlehttp/guzzle": "^7.5",
-        "hashids/hashids": "^5.0",
-        "laracasts/flash": "^3.2",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
         "laravel/slack-notification-channel": "^2.5",
         "laravel/socialite": "^5.6",
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^3.0",
-        "nwidart/laravel-modules": "^10.0",
         "predis/predis": "^2.1",
         "spatie/laravel-activitylog": "^4.7",
         "spatie/laravel-backup": "^8.1",
         "spatie/laravel-html": "^3.2",
         "spatie/laravel-medialibrary": "^10.7",
         "spatie/laravel-permission": "^5.9",
-        "yajra/laravel-datatables-oracle": "^10.3",
         "star/laravel-installer": "*@dev",
-        "star/laravel-filemanager": "*@dev",
+        "star/laravel-modules": "*@dev",
         "star/laravel-module-manager": "*@dev",
-        "star/laravel-menu": "*@dev"
+        "star/laravel-filemanager": "*@dev",
+        "star/laravel-menu": "*@dev",
+        "star/laravel-datatables-oracle": "*@dev",
+        "star/log-viewer": "*@dev",
+        "star/flash": "*@dev",
+        "star/hashids": "*@dev",
+        "star/support": "*@dev"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8",
@@ -75,17 +75,41 @@
             "type": "path",
             "url": "./packages/star/laravel-installer"
         },
+        "star/laravel-modules": {
+            "type": "path",
+            "url": "./packages/star/laravel-modules"
+        },
         "star/laravel-module-manager": {
             "type": "path",
             "url": "./packages/star/laravel-module-manager"
+        },
+        "star/laravel-menu": {
+            "type": "path",
+            "url": "./packages/star/laravel-menu"
+        },
+        "star/laravel-datatables-oracle": {
+            "type": "path",
+            "url": "./packages/star/laravel-datatables-oracle"
         },
         "star/laravel-filemanager": {
             "type": "path",
             "url": "./packages/star/laravel-filemanager"
         },
-        "star/laravel-menu": {
+        "star/log-viewer": {
             "type": "path",
-            "url": "./packages/star/laravel-menu"
+            "url": "./packages/star/log-viewer"
+        },
+        "star/flash": {
+            "type": "path",
+            "url": "./packages/star/flash"
+        },
+        "star/hashids": {
+            "type": "path",
+            "url": "./packages/star/hashids"
+        },
+        "star/support": {
+            "type": "path",
+            "url": "./packages/star/support"
         }
     },
     "scripts": {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Nwidart\Modules\Providers;
+namespace Star\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Nwidart\Modules\Commands;
+use Star\Modules\Commands;
 
 class ConsoleServiceProvider extends ServiceProvider
 {

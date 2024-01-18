@@ -20,8 +20,8 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
-use Laracasts\Flash\Flash;
-use Yajra\DataTables\DataTables;
+use Star\Flash\Flash;
+use Star\DataTables\DataTables;
 
 class UserController extends Controller
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nwidart\Modules\Traits;
+namespace Star\Modules\Traits;
 
 trait MigrationLoaderTrait
 {

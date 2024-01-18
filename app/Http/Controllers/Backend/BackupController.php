@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-use Laracasts\Flash\Flash;
+use Star\Flash\Flash;
 
 class BackupController extends Controller
 {

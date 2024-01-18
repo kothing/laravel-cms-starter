@@ -1,9 +1,9 @@
 <?php
 
-namespace Nwidart\Modules\Commands;
+namespace Star\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Nwidart\Modules\Module;
+use Star\Modules\Module;
 use Symfony\Component\Console\Input\InputArgument;
 
 class EnableCommand extends Command

@@ -1,9 +1,9 @@
 <?php
 
-namespace Nwidart\Modules;
+namespace Star\Modules;
 
 use Illuminate\Filesystem\Filesystem;
-use Nwidart\Modules\Exceptions\InvalidJsonException;
+use Star\Modules\Exceptions\InvalidJsonException;
 
 class Json
 {

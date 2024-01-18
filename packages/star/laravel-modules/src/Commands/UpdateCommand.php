@@ -1,10 +1,10 @@
 <?php
 
-namespace Nwidart\Modules\Commands;
+namespace Star\Modules\Commands;
 
 use Illuminate\Console\Command;
-use Nwidart\Modules\Module;
-use Nwidart\Modules\Traits\ModuleCommandTrait;
+use Star\Modules\Module;
+use Star\Modules\Traits\ModuleCommandTrait;
 use Symfony\Component\Console\Input\InputArgument;
 
 class UpdateCommand extends Command
@@ -46,7 +46,7 @@ class UpdateCommand extends Command
 
     protected function updateAllModule()
     {
-        /** @var \Nwidart\Modules\Module $module */
+        /** @var \Star\Modules\Module $module */
         $modules = $this->laravel['modules']->getOrdered();
 
         foreach ($modules as $module) {

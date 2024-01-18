@@ -1,6 +1,6 @@
 <?php
 
-use Arcanedev\LogViewer\Contracts\Utilities\Filesystem;
+use Star\LogViewer\Contracts\Utilities\Filesystem;
 
 return [
 
@@ -57,7 +57,7 @@ return [
         // 'attributes' => [
         //     'prefix'     => 'log-viewer',
 
-        //     'middleware' => env('ARCANEDEV_LOGVIEWER_MIDDLEWARE') ? explode(',', env('ARCANEDEV_LOGVIEWER_MIDDLEWARE')) : null,
+        //     'middleware' => env('STAR_LOGVIEWER_MIDDLEWARE') ? explode(',', env('STAR_LOGVIEWER_MIDDLEWARE')) : null,
         // ],
     ],
 

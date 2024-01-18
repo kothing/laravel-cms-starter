@@ -1,8 +1,8 @@
 <?php
 
-namespace Nwidart\Modules\Publishing;
+namespace Star\Modules\Publishing;
 
-use Nwidart\Modules\Support\Config\GenerateConfigReader;
+use Star\Modules\Support\Config\GenerateConfigReader;
 
 class AssetPublisher extends Publisher
 {

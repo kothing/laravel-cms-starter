@@ -1,12 +1,12 @@
 <?php
 
-namespace Nwidart\Modules\Laravel;
+namespace Star\Modules\Laravel;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Foundation\ProviderRepository;
 use Illuminate\Support\Str;
-use Nwidart\Modules\Module as BaseModule;
+use Star\Modules\Module as BaseModule;
 
 class Module extends BaseModule
 {

@@ -1,7 +1,7 @@
 <?php
 
-use Nwidart\Modules\Activators\FileActivator;
-use Nwidart\Modules\Commands;
+use Star\Modules\Activators\FileActivator;
+use Star\Modules\Commands;
 
 return [
 
@@ -27,8 +27,7 @@ return [
 
     'stubs' => [
         'enabled' => true,
-        // 'path' => base_path('vendor/nwidart/laravel-modules/src/Commands/stubs'),
-        'path' => base_path('stubs/module-stubs'),
+        'path' => base_path('packages/star/laravel-modules/src/Commands/stubs'),
         'files' => [
             'routes/web' => 'routes/web.php',
             'routes/api' => 'routes/api.php',
@@ -202,6 +201,7 @@ return [
         'enabled' => false,
         'paths' => [
             base_path('vendor/*/*'),
+            base_path('packages/*/*'),
         ],
     ],
     /*

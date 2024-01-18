@@ -1,9 +1,9 @@
 <?php
 
-namespace Nwidart\Modules\Contracts;
+namespace Star\Modules\Contracts;
 
-use Nwidart\Modules\Exceptions\ModuleNotFoundException;
-use Nwidart\Modules\Module;
+use Star\Modules\Exceptions\ModuleNotFoundException;
+use Star\Modules\Module;
 
 interface RepositoryInterface
 {
@@ -31,7 +31,7 @@ interface RepositoryInterface
     /**
      * Get modules as modules collection instance.
      *
-     * @return \Nwidart\Modules\Collection
+     * @return \Star\Modules\Collection
      */
     public function toCollection();
 
@@ -141,7 +141,7 @@ interface RepositoryInterface
      * Delete a specific module.
      * @param string $module
      * @return bool
-     * @throws \Nwidart\Modules\Exceptions\ModuleNotFoundException
+     * @throws \Star\Modules\Exceptions\ModuleNotFoundException
      */
     public function delete(string $module): bool;
 

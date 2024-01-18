@@ -1,6 +1,6 @@
 <?php
 
-namespace Nwidart\Modules\Exceptions;
+namespace Star\Modules\Exceptions;
 
 class ModuleNotFoundException extends \Exception
 {

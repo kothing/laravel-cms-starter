@@ -1,12 +1,12 @@
 <?php
 
-namespace Nwidart\Modules\Migrations;
+namespace Star\Modules\Migrations;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use Nwidart\Modules\Module;
-use Nwidart\Modules\Support\Config\GenerateConfigReader;
+use Star\Modules\Module;
+use Star\Modules\Support\Config\GenerateConfigReader;
 
 class Migrator
 {
