@@ -11,7 +11,11 @@ if (! function_exists('app_name')) {
      */
     function app_name()
     {
-        return config('app.name');
+        if(setting('app_name')) {
+            return setting('app_name');
+        } else {
+            return config('app.name');
+        }
     }
 }
 
