@@ -64,7 +64,7 @@
                 @if (auth()->user()->id == $$module_name_singular->id)
                 <div class="mt-8">
                     <a href='{{ route("frontend.users.profileEdit", encode_id($$module_name_singular->id)) }}'>
-                        <div class="w-full text-sm px-6 py-2 transition ease-in duration-200 rounded text-gray-500 hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">
+                        <div class="w-full text-sm px-6 py-2 transition ease-in duration-200 rounded text-gray-500 hover:bg-gray-800 hover:text-white border-1 border-gray-900 focus:outline-none">
                             Edit Profile
                         </div>
                     </a>
@@ -74,7 +74,7 @@
                 @if (auth()->user()->username == $$module_name_singular->username)
                 <div class="mt-8">
                     <a href="{{ route('frontend.users.changePassword', $$module_name_singular->username) }}">
-                        <div class="w-full text-sm px-6 py-2 transition ease-in duration-200 rounded text-gray-500 hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">
+                        <div class="w-full text-sm px-6 py-2 transition ease-in duration-200 rounded text-gray-500 hover:bg-gray-800 hover:text-white border-1 border-gray-900 focus:outline-none">
                             Change Password
                         </div>
                     </a>
@@ -87,7 +87,7 @@
         </div>
     </div>
     <div class="col-span-2">
-        <div class="mb-8 p-6 bg-white border shadow-lg rounded-lg">
+        <div class="mb-8 p-6 bg-white shadow-lg rounded-lg">
             <h3 class="text-xl font-semibold">
                 Profile
             </h3>
