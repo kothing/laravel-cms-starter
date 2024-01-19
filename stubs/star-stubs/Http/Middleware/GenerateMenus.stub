@@ -24,7 +24,7 @@ class GenerateMenus
         \Menu::make('admin_sidebar', function ($menu) {
 
             // {{moduleNamePlural}}
-            $menu->add('<i class="nav-icon fa-regular fa-sun"></i> '.__('{{moduleNamePlural}}'), [
+            $menu->add('<i class="nav-icon fa fa-regular fa-sun"></i> '.__('{{moduleNamePlural}}'), [
                 'route' => 'backend.{{moduleNameLowerPlural}}.index',
                 'class' => 'nav-item',
             ])
