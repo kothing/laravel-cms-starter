@@ -156,14 +156,13 @@ if (isset($$module_name_singular)){
 <link href="{{ asset('vendor/select2/select2-coreui-bootstrap4.min.css') }}" rel="stylesheet" />
 
 <!-- Date Time Picker -->
-<link rel="stylesheet" href="{{ asset('vendor/bootstrap-4-datetime-picker/css/tempusdominus-bootstrap-4.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('vendor/bootstrap-4-datetime-picker/datetime-picker.min.css') }}" />
 
 @endpush
 
 @push ('after-scripts')
-<!-- Select2 Bootstrap 4 Core UI -->
-<script src="https://unpkg.com/select2@4.0.6/dist/js/select2.min.js"></script>
-
+<!-- Select2 -->
+<script src="{{ asset('vendor/select2/select2.min.js') }}"></script>
 <script type="module">
 $(document).ready(function() {
     $('.select2-users').select2({
@@ -214,7 +213,7 @@ $(document).ready(function() {
 
 <!-- Date Time Picker & Moment Js-->
 <script type="module" src="{{ asset('vendor/moment/moment.min.js') }}"></script>
-<script type="module" src="{{ asset('vendor/bootstrap-4-datetime-picker/js/tempusdominus-bootstrap-4.min.js') }}"></script>
+<script type="module" src="{{ asset('vendor/bootstrap-4-datetime-picker/datetime-picker.min.js') }}"></script>
 
 <script type="module">
 $(function() {
