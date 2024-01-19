@@ -7,7 +7,7 @@
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-7xl mx-auto px-4 sm:px-6 py-10">
     <div class="col-span-1">
         <div class="text-center mb-8 md:mb-0">
-            <img class="w-48 h-48 object-cover rounded-lg mx-auto -mb-24" src="{{asset($$module_name_singular->avatar)}}" alt="{{$$module_name_singular->name}}" />
+            <img class="object-cover rounded-lg mx-auto -mb-24" src="{{asset($$module_name_singular->avatar)}}" alt="{{$$module_name_singular->name}}" />
             <div class="bg-white shadow-lg rounded-lg px-8 pt-32 pb-10 text-gray-400">
                 <h3 class="font-title text-gray-800 text-xl mb-3">
                     {{$$module_name_singular->name}}
