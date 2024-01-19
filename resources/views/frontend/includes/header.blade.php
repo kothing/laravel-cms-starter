@@ -1,6 +1,7 @@
 <nav class="bg-white drop-shadow-md" x-data="{ showMobileNav: false }">
     <div class="max-w-7xl mx-auto px-2 py-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
+            <!-- open menu button -->
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <button @click="showMobileNav = !showMobileNav" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                     <span class="sr-only">{{__('Open main menu')}}</span>
@@ -12,6 +13,8 @@
                     </svg>
                 </button>
             </div>
+
+            <!-- main menu -->
             <div class="flex-1 flex items-center justify-center content-center sm:items-stretch sm:justify-start">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="/">
@@ -41,6 +44,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- locale & user -->
             <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <div class="ml-3 relative" x-data="{ isUserMenuOpen: false, isLocalMenuOpen: false }">
                     <div class="flex flex-row">
@@ -53,14 +58,14 @@
                             </span>
                         </button>
                         @guest
-                        <a href="{{ route('login') }}" class="flex items-center mx-2 px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-orange-600 rounded-md hover:bg-orange-500 focus:outline-none focus:bg-orange-500 invisible md:visible">
+                        <a href="{{ route('login') }}" class="flex items-center mx-2 px-3 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-orange-600 rounded-md hover:bg-orange-500 focus:outline-none focus:bg-orange-500">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
                             </svg>
                             <span class="mx-1">{{__('Login')}}</span>
                         </a>
                         @if(user_registration())
-                        <a href="{{ route('register') }}" class="flex items-center mx-2 px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-orange-600 rounded-md hover:bg-orange-500 focus:outline-none focus:bg-orange-500 invisible md:visible">
+                        <a href="{{ route('register') }}" class="flex items-center mx-2 px-3 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-orange-600 rounded-md hover:bg-orange-500 focus:outline-none focus:bg-orange-500">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
