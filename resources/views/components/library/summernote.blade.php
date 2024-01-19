@@ -18,7 +18,7 @@
 <script type="module">
     // Define function to open filemanager window
     const fileOpen = function(options, cb) {
-        const route_prefix = (options && options.prefix) ? options.prefix : '/laravel-filemanager';
+        const route_prefix = (options && options.prefix) ? options.prefix : '/filemanager';
         window.open(route_prefix + '?type=' + options.type || 'file', 'FileManager', 'width=900,height=600');
         window.SetUrl = cb;
     };
@@ -32,7 +32,7 @@
             click: function() {
                 fileOpen({
                     type: 'image',
-                    prefix: '/laravel-filemanager'
+                    prefix: '/filemanager'
                 }, function(lfmItems, path) {
                     lfmItems.forEach(function(lfmItem) {
                         context.invoke('insertImage', lfmItem.url);
