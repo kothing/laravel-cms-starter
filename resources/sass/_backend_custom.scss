@@ -36,3 +36,14 @@ a {
 .sidebar-nav .nav-group-items .nav-link .nav-icon:before {
     font-size: 80%;
 }
+
+
+// select2
+.select2-container--default .select2-selection--multiple {
+    padding: 0;
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+    height: 22px;
+    margin: 6px;
+}
