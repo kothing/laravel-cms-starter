@@ -1,5 +1,5 @@
 <div class="container flex flex-col mx-auto w-full items-center justify-center">
-    <div class="px-4 py-3 sm:px-6 w-full border-gray-400 bg-white shadow mb-4 rounded-md">
+    <div class="w-full bg-white px-4 py-3 border-b border-gray-100">
         <h3 class="text-lg leading-6 font-medium text-gray-800">
             @lang('Recent Pages')
         </h3>
@@ -7,12 +7,12 @@
             Recently published pages!
         </p>
     </div>
-    <ul class="w-full border-gray-400 rounded-md shadow hover:shadow-lg py-3">
+    <ul class="w-full py-3">
         @foreach ($recentPages as $row)
         @php
         $details_url = route("frontend.pages.show",[encode_id($row->id), $row->slug]);
         @endphp
-        <li class="flex items-center flex-row flex-1 transition duration-500 ease-in-out transform hover:-translate-y-1 px-4 py-2">
+        <li class="flex items-center flex-row flex-1 transition duration-500 ease-in-out transform hover:-translate-y-1 px-4 py-3">
             @if($row->featured_image != "")     
             <div class="flex flex-col h-10 justify-center items-center mr-4">
                 <a href="{{$details_url}}" class="block relative">
@@ -20,7 +20,7 @@
                 </a>
             </div>
             @endif
-            <div class="flex-1 pl-1">
+            <div class="flex-1">
                 <div class="font-medium">
                     <a href="{{$details_url}}">
                         {{ $row->name }}
