@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+.collapse.show {
+    visibility: visible;
+}
+
 // sidebar-nav scrollbar
 .sidebar-nav::-webkit-scrollbar {
     width: 8px;
