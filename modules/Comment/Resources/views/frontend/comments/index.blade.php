@@ -69,6 +69,11 @@
     </div>
     <div class="d-flex justify-content-center w-100 mt-3">
         {{$$module_name->links()}}
+        @foreach ($$module_name->links() as $index => $link)
+            <span>
+                <a href="{{$link->url}}">{{$link->label}}</a>
+            </span>
+        @endforeach
     </div>
 </section>
 
