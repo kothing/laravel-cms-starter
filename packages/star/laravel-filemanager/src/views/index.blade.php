@@ -280,7 +280,7 @@
       headers: {
         'Authorization': 'Bearer ' + getUrlParam('token')
       },
-      acceptedFiles: "{{ implode(',', $helper->availableMimeTypes()) }}",
+      acceptedFiles: "{{ implode(',', $helper->availableMimeTypes() ?? []) }}",
       maxFilesize: ({{ $helper->maxUploadSize() }} / 1000)
     }
   </script>
