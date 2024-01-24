@@ -44,7 +44,7 @@
         @include('backend.includes.header')
         <!-- /Header -->
 
-        <div class="body flex-grow-1">
+        <main class="body flex-grow-1">
             <div class="container-lg">
 
                 @include('flash::message')
@@ -58,7 +58,7 @@
                 <!-- / Main content block -->
 
             </div>
-        </div>
+        </main>
 
         <!-- Footer block -->
         @include('backend.includes.footer')
