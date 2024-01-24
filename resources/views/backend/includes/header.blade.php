@@ -10,7 +10,7 @@ $notifications_latest = optional($notifications)->take(5);
             <i class="fa-solid fa-bars"></i>
         </button>
         <a class="header-brand d-sm-none" href="#">
-            <img class="sidebar-brand-full" src="{{asset('img/logo.svg')}}" height="46" alt="{{ app_name() }}">
+            <img class="sidebar-brand-full" src="{{asset('images/logo.svg')}}" height="46" alt="{{ app_name() }}">
         </a>
         <ul class="header-nav d-none d-md-flex">
             <li class="nav-item"><a class="nav-link" href="{{ route('frontend.index') }}" target="_blank">{{app_name()}}&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>

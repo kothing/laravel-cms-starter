@@ -7,7 +7,7 @@
 <section class="bg-gray-100 mb-20">
     <div class="container mx-auto flex px-1 sm:px-20 py-20 md:flex-row flex-col items-center">
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img class="object-cover object-center rounded" alt="hero" src="{{ asset('img/default.png') }}">
+            <img class="object-cover object-center rounded" alt="hero" src="{{ asset('images/default.png') }}">
         </div>
         <div class="lg:flex-grow md:w-1/2 px-4 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 class="title-font sm:text-8xl text-5xl mb-4 font-medium text-gray-800">
@@ -53,13 +53,13 @@
 <section class="mb-20">
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-5">
         <div class="shadow-lg p-3 sm:p-10 rounded-lg">
-            <img src="{{asset('img/preview-image-01.png')}}" alt="Page preview">
+            <img src="{{asset('images/preview-image-01.png')}}" alt="Page preview">
         </div>
         <div class="shadow-lg p-3 sm:p-10 rounded-lg row-span-2">
-            <img src="{{asset('img/preview-image-03.png')}}" alt="Page preview">
+            <img src="{{asset('images/preview-image-03.png')}}" alt="Page preview">
         </div>
         <div class="shadow-lg p-3 sm:p-10 rounded-lg">
-            <img src="{{asset('img/preview-image-03.png')}}" alt="Page preview">
+            <img src="{{asset('images/preview-image-03.png')}}" alt="Page preview">
         </div>
     </div>
 </section>

@@ -18,7 +18,7 @@
             <div class="flex-1 flex items-center justify-center content-center sm:items-stretch sm:justify-start">
                 <div class="flex-shrink-0 flex items-center">
                     <a href="/">
-                        <img class="block h-10 w-auto" src="{{asset('img/logo.svg')}}" alt="{{ app_name() }}">
+                        <img class="block h-10 w-auto" src="{{asset('images/logo.svg')}}" alt="{{ app_name() }}">
                     </a>
                 </div>
                 <div class="hidden sm:block sm:ml-6">

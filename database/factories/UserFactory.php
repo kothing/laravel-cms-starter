@@ -38,7 +38,7 @@ class UserFactory extends Factory
             'remember_token' => Str::random(10),
             'mobile' => $this->faker->phoneNumber,
             'date_of_birth' => $this->faker->date,
-            'avatar' => 'img/default-avatar.png',
+            'avatar' => 'images/default-avatar.png',
             'gender' => $this->faker->randomElement(['Male', 'Female', 'Other']),
             'email_verified_at' => now(),
             'created_at' => now(),

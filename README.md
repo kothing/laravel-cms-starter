@@ -6,11 +6,11 @@ A modular CMS starter application built with Laravel 10.x.
 
 **Screenshots**   
 
-![preview Image](/public/img/preview-image-01.png)
+![preview Image](/public/images/preview-image-01.png)
 
-![preview Image](/public/img/preview-image-02.png)
+![preview Image](/public/images/preview-image-02.png)
 
-![preview Image](/public/img/preview-image-03.png)
+![preview Image](/public/images/preview-image-03.png)
 
 ## Core Features
 

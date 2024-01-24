@@ -65,14 +65,14 @@
             <x-frontend.card :url="$post_details_url" :name="$post->name" :image="$post->featured_image">
                 @if($post->created_by_alias)
                 <div class="flex flex-row items-center my-4">
-                    <img class="w-5 h-5 sm:w-8 sm:h-8 rounded-full" src="{{asset('img/avatars/'.rand(1, 8).'.jpg')}}" alt="Author profile image">
+                    <img class="w-5 h-5 sm:w-8 sm:h-8 rounded-full" src="{{asset('images/avatars/'.rand(1, 8).'.jpg')}}" alt="Author profile image">
                     <h6 class="text-muted text-sm small ml-2 mb-0">
                         {{ $post->created_by_alias }}
                     </h6>
                 </div>
                 @else
                 <div class="flex flex-row items-center my-4">
-                    <img class="w-5 h-5 sm:w-8 sm:h-8 rounded-full" src="{{asset('img/avatars/'.rand(1, 8).'.jpg')}}" alt="">
+                    <img class="w-5 h-5 sm:w-8 sm:h-8 rounded-full" src="{{asset('images/avatars/'.rand(1, 8).'.jpg')}}" alt="">
 
                     <a href="{{ route('frontend.users.profile', $post->created_by) }}">
                         <h6 class="text-muted text-sm small ml-2 mb-0">

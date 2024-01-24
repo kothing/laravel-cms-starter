@@ -74,7 +74,7 @@ return [
                 'label' => 'Meta Image', // you know what label it is
                 'rules' => '', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => 'img/default.png', // default value if you want
+                'value' => 'images/default.png', // default value if you want
             ],
             [
                 'type' => 'text', // input fields type

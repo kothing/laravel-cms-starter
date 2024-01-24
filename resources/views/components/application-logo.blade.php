@@ -1,1 +1,1 @@
-<img src="{{asset('img/logo.svg')}}" style="height: 50px;">
+<img src="{{asset('images/logo.svg')}}" style="height: 50px;">

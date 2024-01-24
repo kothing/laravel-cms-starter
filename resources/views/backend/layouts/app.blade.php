@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="{{asset('img/favicon.svg')}}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('img/favicon.svg')}}">
+    <link rel="icon" type="image/png" href="{{asset('images/favicon.svg')}}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/favicon.svg')}}">
     <meta name="keyword" content="{{ setting('meta_keyword') }}">
     <meta name="description" content="{{ setting('meta_description') }}">
 
     <!-- Shortcut Icon -->
-    <link rel="shortcut icon" href="{{asset('img/favicon.svg')}}">
-    <link rel="icon" type="image/ico" href="{{asset('img/favicon.svg')}}" />
+    <link rel="shortcut icon" href="{{asset('images/favicon.svg')}}">
+    <link rel="icon" type="image/ico" href="{{asset('images/favicon.svg')}}" />
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
