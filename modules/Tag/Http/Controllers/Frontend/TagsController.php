@@ -52,7 +52,7 @@ class TagsController extends Controller
 
         $module_action = 'List';
 
-        $$module_name = $module_model::latest()->with('posts')->paginate();
+        $$module_name = $module_model::latest()->with('posts')->paginate(10);
 
         return view(
             "tag::frontend.{$module_path}.index",

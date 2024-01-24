@@ -52,7 +52,7 @@ class CommentsController extends Controller
 
         $module_action = 'List';
 
-        $$module_name = $module_model::latest()->published()->with('commentable')->paginate();
+        $$module_name = $module_model::latest()->published()->with('commentable')->paginate(10);
 
         return view(
             "comment::frontend.{$module_name}.index",

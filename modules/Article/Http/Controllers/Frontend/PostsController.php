@@ -52,7 +52,7 @@ class PostsController extends Controller
 
         $module_action = 'List';
 
-        $$module_name = $module_model::latest()->with(['category', 'tags', 'comments'])->paginate();
+        $$module_name = $module_model::latest()->with(['category', 'tags', 'comments'])->paginate(10);
 
         return view(
             "article::frontend.{$module_path}.index",
