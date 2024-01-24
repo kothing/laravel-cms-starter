@@ -17,7 +17,7 @@
 
     <!-- Styles -->
     @stack('before-styles')
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/base.css') }}">
     @stack('after-styles')
 </head>
 
@@ -27,7 +27,7 @@
     </div>
 
     <!-- Scripts -->
-    <script type="module" src="{{ asset('js/app.js') }}" defer></script>
+    <script type="module" src="{{ asset('js/base.js') }}" defer></script>
 </body>
 
 </html>
