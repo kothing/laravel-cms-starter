@@ -40,7 +40,7 @@
                 </a>
             </div>
 
-            <nav class="relative flex flex-wrap justify-center gap-8 p-8 text-sm font-bold border-1 border-black rounded-xl">
+            <nav class="relative flex flex-wrap justify-center gap-8 p-8 text-sm font-bold border border-black rounded-xl">
                 <a href="{{ route('frontend.categories.index') }}" class="text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
                     {{__('Categories')}}
                 </a>
