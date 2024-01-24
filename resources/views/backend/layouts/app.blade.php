@@ -21,7 +21,7 @@
 
     <script src="{{asset('vendor/jquery/jquery@3.2.1-min.js')}}"></script>
 
-    @vite(['resources/sass/app-backend.scss', 'resources/js/app-backend.js'])
+    @vite(['resources/assets/css/app-backend.scss', 'resources/assets/js/app-backend.js'])
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+UI&display=swap" rel="stylesheet" />

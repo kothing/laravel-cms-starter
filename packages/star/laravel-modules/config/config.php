@@ -36,7 +36,7 @@ return [
             'scaffold/config' => 'config/config.php',
             'composer' => 'composer.json',
             'assets/js/app' => 'resources/assets/js/app.js',
-            'assets/sass/app' => 'resources/assets/sass/app.scss',
+            'assets/css/app' => 'resources/assets/css/app.scss',
             'vite' => 'vite.config.js',
             'package' => 'package.json',
         ],

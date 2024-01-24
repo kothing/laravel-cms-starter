@@ -19,7 +19,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    @vite(['resources/sass/app-frontend.scss', 'resources/js/app-frontend.js'])
+    @vite(['resources/assets/css/app-frontend.scss', 'resources/assets/js/app-frontend.js'])
 
     @livewireStyles
     

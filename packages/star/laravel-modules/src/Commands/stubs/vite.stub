@@ -12,7 +12,7 @@ export default defineConfig({
             publicDirectory: '../../public',
             buildDirectory: 'build-$LOWER_NAME$',
             input: [
-                __dirname + '/resources/assets/sass/app.scss',
+                __dirname + '/resources/assets/css/app.scss',
                 __dirname + '/resources/assets/js/app.js'
             ],
             refresh: true,
@@ -21,6 +21,6 @@ export default defineConfig({
 });
 
 //export const paths = [
-//    'Modules/$STUDLY_NAME$/resources/assets/sass/app.scss',
+//    'Modules/$STUDLY_NAME$/resources/assets/css/app.scss',
 //    'Modules/$STUDLY_NAME$/resources/assets/js/app.js',
 //];
