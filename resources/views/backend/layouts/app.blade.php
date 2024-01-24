@@ -39,12 +39,12 @@
     @include('backend.includes.sidebar')
     <!-- /Sidebar -->
 
-    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+    <main class="wrapper d-flex flex-column min-vh-100 bg-light">
         <!-- Header -->
         @include('backend.includes.header')
         <!-- /Header -->
 
-        <main class="body flex-grow-1">
+        <div class="body flex-grow-1">
             <div class="container-lg">
 
                 @include('flash::message')
@@ -58,13 +58,13 @@
                 <!-- / Main content block -->
 
             </div>
-        </main>
+        </div>
 
         <!-- Footer block -->
         @include('backend.includes.footer')
         <!-- / Footer block -->
 
-    </div>
+    </main>
 
     <!-- Scripts -->
     @livewireScriptConfig
