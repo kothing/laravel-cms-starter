@@ -20,7 +20,7 @@ export default defineConfig({
                 "resources/views/**",
                 "resources/routes/**",
                 "routes/**",
-                "modules/**/Resources/lang/**",
+                "modules/**/lang/**",
                 "modules/**/Resources/views/**/*.blade.php",
             ],
         }),
