@@ -1,0 +1,9 @@
+<?php
+
+return [
+
+    'name' => 'Name',
+    'slug' => 'Slug',
+    'action' => 'Action',
+
+];
