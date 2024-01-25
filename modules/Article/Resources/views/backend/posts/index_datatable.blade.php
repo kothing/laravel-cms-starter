@@ -49,16 +49,16 @@
                     <thead>
                         <tr>
                             <th>
-                                #
+                                @lang("article::list.id")
                             </th>
                             <th>
-                                Name
+                                @lang("article::list.name")
                             </th>
                             <th>
-                                Categoty
+                                @lang("article::list.category")
                             </th>
                             <th class="text-end">
-                                Action
+                                @lang("article::list.action")
                             </th>
                         </tr>
                     </thead>
