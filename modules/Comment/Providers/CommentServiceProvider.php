@@ -28,7 +28,7 @@ class CommentServiceProvider extends ServiceProvider
         $this->registerTranslations();
         $this->registerConfig();
         $this->registerViews();
-        $this->loadMigrationsFrom(module_path('Comment', 'Database/Migrations'));
+        $this->loadMigrationsFrom(module_path($this->moduleName, 'Database/Migrations'));
 
         // adding global middleware
         $kernel = $this->app->make('Illuminate\Contracts\Http\Kernel');
@@ -73,12 +73,12 @@ class CommentServiceProvider extends ServiceProvider
      */
     public function registerTranslations()
     {
-        $langPath = resource_path('lang/modules/comment');
+        $langPath = resource_path('lang/modules/'.$this->moduleNameLower);
 
         if (is_dir($langPath)) {
-            $this->loadTranslationsFrom($langPath, 'comment');
+            $this->loadTranslationsFrom($langPath, $this->moduleNameLower);
         } else {
-            $this->loadTranslationsFrom(module_path('Comment', 'Resources/lang'), 'comment');
+            $this->loadTranslationsFrom(module_path($this->moduleName, 'Resources/lang'), $this->moduleNameLower);
         }
     }
 
@@ -100,11 +100,11 @@ class CommentServiceProvider extends ServiceProvider
     protected function registerConfig()
     {
         $this->publishes([
-            module_path('Comment', 'Config/config.php') => config_path('comment.php'),
+            module_path($this->moduleName, 'Config/config.php') => config_path('comment.php'),
         ], 'config');
         $this->mergeConfigFrom(
-            module_path('Comment', 'Config/config.php'),
-            'comment'
+            module_path($this->moduleName, 'Config/config.php'),
+            $this->moduleNameLower
         );
     }
 
