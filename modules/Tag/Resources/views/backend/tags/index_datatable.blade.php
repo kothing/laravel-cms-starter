@@ -53,13 +53,13 @@
                                     #
                                 </th>
                                 <th>
-                                    Name
+                                    @lang("page::text.name")
                                 </th>
                                 <th>
-                                    Updated At
+                                    @lang("page::text.updated_at")
                                 </th>
                                 <th class="text-end">
-                                    Action
+                                    @lang("page::text.action")
                                 </th>
                             </tr>
                         </thead>
