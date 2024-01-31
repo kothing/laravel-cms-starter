@@ -273,27 +273,6 @@
     </div>
 </div>
 
-<!-- Datetime-picker CSS -->
-@push('after-styles')
-<link href="{{ asset('vendor/datetime-picker/datetime-picker.css') }}" rel="stylesheet">
-@endpush
-
-<!-- Datetime-picker JS -->
-@push('after-scripts')
-<script src="{{ asset('vendor/moment/moment.min.js') }}"></script>
-<script src="{{ asset('vendor/datetime-picker/datetime-picker.js') }}"></script>
-<script type="module">
-    new DateTimePicker("published_at", {
-        singleDatePicker: true,
-        timePicker: true,
-        timePicker24Hour: true,
-        locale: {
-            format: "YYYY-MM-DD HH:mm:ss",
-        },
-    });
-</script>
-@endpush
-
 <!-- Select2 Library -->
 <x-library.select2 />
 @push ('after-scripts')
@@ -347,6 +326,27 @@
                 cache: true
             }
         });
+    });
+</script>
+@endpush
+
+<!-- Datetime-picker CSS -->
+@push('after-styles')
+<link href="{{ asset('vendor/datetime-picker/datetime-picker.css') }}" rel="stylesheet">
+@endpush
+
+<!-- Datetime-picker JS -->
+@push('after-scripts')
+<script src="{{ asset('vendor/moment/moment.min.js') }}"></script>
+<script src="{{ asset('vendor/datetime-picker/datetime-picker.js') }}"></script>
+<script type="module">
+    new DateTimePicker("published_at", {
+        singleDatePicker: true,
+        timePicker: true,
+        timePicker24Hour: true,
+        locale: {
+            format: "YYYY-MM-DD HH:mm:ss",
+        },
     });
 </script>
 @endpush
