@@ -1,5 +1,5 @@
 <div class="row mb-3">
-    <div class="col-12 col-sm-4">
+    <div class="col-6">
         <div class="form-group">
             <?php
             $field_name = 'name';
@@ -11,7 +11,7 @@
             {{ html()->text($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"]) }}
         </div>
     </div>
-    <div class="col-12 col-sm-4">
+    <div class="col-6">
         <div class="form-group">
             <?php
             $field_name = 'slug';
@@ -23,7 +23,26 @@
             {{ html()->text($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"]) }}
         </div>
     </div>
-    <div class="col-12 col-sm-4">
+</div>
+<div class="row mb-3">
+    <div class="col-6">
+        <div class="form-group">
+            <?php
+            $field_name = 'status';
+            $field_label = label_case($field_name);
+            $field_placeholder = "-- Select an option --";
+            $required = "required";
+            $select_options = [
+                '1' => 'Published',
+                '0' => 'Unpublished',
+                '2' => 'Draft'
+            ];
+            ?>
+            {{ html()->label($field_label, $field_name)->class('form-label') }} {!! fielf_required($required) !!}
+            {{ html()->select($field_name, $select_options)->placeholder($field_placeholder)->class('form-control select2')->attributes(["$required"]) }}
+        </div>
+    </div>
+    <div class="col-6">
         <div class="form-group">
             <?php
             $field_name = 'group_name';
@@ -113,26 +132,6 @@
             ?>
             {{ html()->label($field_label, $field_name)->class('form-label') }} {!! fielf_required($required) !!}
             {{ html()->text($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"]) }}
-        </div>
-    </div>
-</div>
-
-<div class="row mb-3">
-    <div class="col-12 col-sm-4">
-        <div class="form-group">
-            <?php
-            $field_name = 'status';
-            $field_label = label_case($field_name);
-            $field_placeholder = "-- Select an option --";
-            $required = "required";
-            $select_options = [
-                '1' => 'Published',
-                '0' => 'Unpublished',
-                '2' => 'Draft'
-            ];
-            ?>
-            {{ html()->label($field_label, $field_name)->class('form-label') }} {!! fielf_required($required) !!}
-            {{ html()->select($field_name, $select_options)->placeholder($field_placeholder)->class('form-control select2')->attributes(["$required"]) }}
         </div>
     </div>
 </div>
