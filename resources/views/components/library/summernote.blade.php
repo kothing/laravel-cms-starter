@@ -52,12 +52,13 @@
             ['color', ['color']],
             ['para', ['ul', 'ol', 'paragraph']],
             ['table', ['table']],
-            ['insert', ['link', 'lfm', 'video']],
+            // ['insert', ['link', 'lfm', 'video']],
+            ['insert', ['link', 'picture', 'video']],
             ['view', ['codeview', 'undo', 'redo', 'help']],
         ],
-        buttons: {
-            lfm: FileButton
-        }
+        // buttons: {
+        //     lfm: FileButton
+        // }
     });
 </script>
 @endpush
