@@ -413,7 +413,7 @@ if (! function_exists('slugify')) {
         }
         $rulelist = config('slugify');
         $string = mb_strtolower($string, "UTF-8");
-        if (preg_match('/^[\x7f-\xff]+$/', $string)) {
+        if (preg_match('/^[\x{4e00}-\x{9fa5}]+$/u', $string)) {
             $string = implode("-", preg_split('/(?<!^)(?!$)/u', $string));
         }
         $string = str_replace(array_keys($rulelist), array_values($rulelist), $string);
