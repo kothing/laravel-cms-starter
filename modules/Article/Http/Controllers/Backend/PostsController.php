@@ -135,9 +135,9 @@ class PostsController extends Controller
 
         $term = trim($request->q);
 
-        if (empty($term)) {
-            return response()->json([]);
-        }
+        // if (empty($term)) {
+        //     return response()->json([]);
+        // }
 
         $query_data = $module_model::where('name', 'LIKE', "%{$term}%")->published()->limit(10)->get();
 
