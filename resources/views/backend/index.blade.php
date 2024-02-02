@@ -23,13 +23,13 @@
             </x-slot>
         </x-backend.section-header>
 
-        <!-- Dashboard Content Area -->
-        
-        <!-- / Dashboard Content Area -->
-
     </div>
 </div>
 
+<!-- Dashboard Content Area -->
+
 @include("backend.includes.dashboard_demo_data")
+
+<!-- / Dashboard Content Area -->
 
 @endsection
