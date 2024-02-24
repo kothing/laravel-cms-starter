@@ -75,10 +75,3 @@
 
 <!-- Summernote editor -->
 <x-library.summernote />
-
-<!-- File Image -->
-@push ('after-scripts')
-<script type="module" src="{{ asset('vendor/laravel-filemanager/js/stand-alone-button.js') }}"></script>
-<script type="module">
-    $('#button-image').filemanager('image');
-</script>

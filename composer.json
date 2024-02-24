@@ -30,7 +30,6 @@
         "star/laravel-installer": "*@dev",
         "star/laravel-modules": "*@dev",
         "star/laravel-module-manager": "*@dev",
-        "star/laravel-filemanager": "*@dev",
         "star/laravel-menu": "*@dev",
         "star/laravel-datatables-oracle": "*@dev",
         "star/log-viewer": "*@dev",
@@ -90,10 +89,6 @@
         "star/laravel-datatables-oracle": {
             "type": "path",
             "url": "./packages/star/laravel-datatables-oracle"
-        },
-        "star/laravel-filemanager": {
-            "type": "path",
-            "url": "./packages/star/laravel-filemanager"
         },
         "star/log-viewer": {
             "type": "path",

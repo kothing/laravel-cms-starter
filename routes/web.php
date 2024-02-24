@@ -141,14 +141,3 @@ Route::group(['namespace' => 'App\Http\Controllers\Backend', 'prefix' => 'admin'
     Route::patch("{$module_name}/{id}/block", ['as' => "{$module_name}.block", 'uses' => "{$controller_name}@block", 'middleware' => ['permission:block_users']]);
     Route::patch("{$module_name}/{id}/unblock", ['as' => "{$module_name}.unblock", 'uses' => "{$controller_name}@unblock", 'middleware' => ['permission:block_users']]);
 });
-
-
-/*
-*
-* Laravel Filemanager Routes
-*
-* --------------------------------------------------------------------
-*/
-Route::group(['prefix' => 'filemanager', 'middleware' => ['web', 'auth', 'can:view_backend']], function () {
-    \Star\LaravelFilemanager\Lfm::routes();
-});
