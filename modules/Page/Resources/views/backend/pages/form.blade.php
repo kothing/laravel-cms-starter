@@ -3,7 +3,7 @@
         <div class="form-group">
             <?php
             $field_name = 'name';
-            $field_label = label_case($field_name);
+            $field_label = __("page::$module_name.$field_name");
             $field_placeholder = $field_label;
             $required = "required";
             ?>
@@ -15,7 +15,7 @@
         <div class="form-group">
             <?php
             $field_name = 'slug';
-            $field_label = label_case($field_name);
+            $field_label = __("page::$module_name.$field_name");
             $field_placeholder = $field_label;
             $required = "";
             ?>
@@ -27,7 +27,7 @@
         <div class="form-group">
             <?php
             $field_name = 'status';
-            $field_label = label_case($field_name);
+            $field_label = __("page::$module_name.$field_name");
             $field_placeholder = "-- Select an option --";
             $required = "required";
             $select_options = [
@@ -46,7 +46,7 @@
         <div class="form-group">
             <?php
             $field_name = 'description';
-            $field_label = label_case($field_name);
+            $field_label = __("page::$module_name.$field_name");
             $field_placeholder = $field_label;
             $required = "";
             ?>
@@ -60,7 +60,7 @@
         <div class="form-group">
             <?php
             $field_name = 'content';
-            $field_label = label_case($field_name);
+            $field_label = __("page::$module_name.$field_name");
             $field_placeholder = $field_label;
             $required = "required";
             ?>

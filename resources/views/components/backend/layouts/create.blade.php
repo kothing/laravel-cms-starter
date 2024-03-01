@@ -17,7 +17,7 @@
 
                 <div class="row">
                     <div class="col-6">
-                        <x-backend.buttons.create>Create</x-backend.buttons.create>
+                        <x-backend.buttons.create>{{__('Create')}}</x-backend.buttons.create>
                     </div>
                     <div class="col-6">
                         <div class="float-end">

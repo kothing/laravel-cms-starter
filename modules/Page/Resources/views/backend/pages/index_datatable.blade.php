@@ -49,16 +49,16 @@
                     <thead>
                         <tr>
                             <th>
-                                #
+                                @lang("page::list.id")
                             </th>
                             <th>
-                                @lang("page::text.name")
+                                @lang("page::list.name")
                             </th>
                             <th>
-                                @lang("page::text.updated_at")
+                                @lang("page::list.updated_at")
                             </th>
                             <th class="text-end">
-                                @lang("page::text.action")
+                                @lang("page::list.action")
                             </th>
                         </tr>
                     </thead>

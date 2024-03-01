@@ -31,7 +31,7 @@
                     <ul class="dropdown-menu">
                         <li>
                             <a class="dropdown-item" href='{{ route("backend.$module_name.trashed") }}'>
-                                <i class="fas fa-eye-slash"></i> View trash
+                                <i class="fas fa-eye-slash"></i> @lang("View trash")
                             </a>
                         </li>
                         <!-- <li>
