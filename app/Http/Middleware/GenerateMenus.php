@@ -27,7 +27,7 @@ class GenerateMenus
             ]);
 
             // Notifications
-            $menu->add('<i class="nav-icon fas fa-bell"></i> Notifications', [
+            $menu->add('<i class="nav-icon fas fa-bell"></i> '.__('Notifications'), [
                 'route' => 'backend.notifications.index',
                 'class' => 'nav-item',
             ])->data([
@@ -39,7 +39,7 @@ class GenerateMenus
             ]);
 
             // Separator: Access Management
-            $menu->add('Management', [
+            $menu->add(__('Management'), [
                 'class' => 'nav-title',
             ])->data([
                 'order' => 101,
@@ -47,7 +47,7 @@ class GenerateMenus
             ]);
 
             // Settings
-            $menu->add('<i class="nav-icon fas fa-cogs"></i> Settings', [
+            $menu->add('<i class="nav-icon fas fa-cogs"></i> '.__('Settings'), [
                 'route' => 'backend.settings',
                 'class' => 'nav-item',
             ])->data([
@@ -59,7 +59,7 @@ class GenerateMenus
             ]);
 
             // Backup
-            $menu->add('<i class="nav-icon fas fa-archive"></i> Backups', [
+            $menu->add('<i class="nav-icon fas fa-archive"></i> '.__('Backups'), [
                 'route' => 'backend.backups.index',
                 'class' => 'nav-item',
             ])->data([
@@ -71,7 +71,7 @@ class GenerateMenus
             ]);
 
             // Access Control Dropdown
-            $accessControl = $menu->add('<i class="nav-icon fa-solid fa-user-gear"></i> Access Control', [
+            $accessControl = $menu->add('<i class="nav-icon fa-solid fa-user-gear"></i> '.__('Access Control'), [
                 'class' => 'nav-group',
             ])->data([
                 'order' => 103,
@@ -87,7 +87,7 @@ class GenerateMenus
             ]);
 
             // Submenu: Users
-            $accessControl->add('<i class="nav-icon fa-solid fa-user-group"></i> Users', [
+            $accessControl->add('<i class="nav-icon fa-solid fa-user-group"></i> '.__('Users'), [
                 'route' => 'backend.users.index',
                 'class' => 'nav-item',
             ])->data([
@@ -99,7 +99,7 @@ class GenerateMenus
             ]);
 
             // Submenu: Roles
-            $accessControl->add('<i class="nav-icon fa-solid fa-user-shield"></i> Roles', [
+            $accessControl->add('<i class="nav-icon fa-solid fa-user-shield"></i> '.__('Roles'), [
                 'route' => 'backend.roles.index',
                 'class' => 'nav-item',
             ])->data([
@@ -112,7 +112,7 @@ class GenerateMenus
 
             // Log Viewer
             // Log Viewer Dropdown
-            $accessControl = $menu->add('<i class="nav-icon fa-solid fa-list-check"></i> Log Viewer', [
+            $accessControl = $menu->add('<i class="nav-icon fa-solid fa-list-check"></i> '.__('Log Viewer'), [
                 'class' => 'nav-group',
             ])->data([
                 'order' => 106,
@@ -127,7 +127,7 @@ class GenerateMenus
             ]);
 
             // Submenu: Log Viewer Dashboard
-            $accessControl->add('<i class="nav-icon fa-solid fa-list"></i> Logs dashboard', [
+            $accessControl->add('<i class="nav-icon fa-solid fa-list"></i> '.__('Logs dashboard'), [
                 'route' => 'log-viewer::dashboard',
                 'class' => 'nav-item',
             ])->data([
@@ -138,7 +138,7 @@ class GenerateMenus
             ]);
 
             // Submenu: Log Viewer Logs by Days
-            $accessControl->add('<i class="nav-icon fa-solid fa-list-ol"></i> Logs by Days', [
+            $accessControl->add('<i class="nav-icon fa-solid fa-list-ol"></i> '.__('Logs by Days'), [
                 'route' => 'log-viewer::logs.list',
                 'class' => 'nav-item',
             ])->data([
