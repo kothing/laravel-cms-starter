@@ -4,54 +4,15 @@ $published_at_value = '';
 $moderated_at_value = '';
 $parent_name = '';
 
-if (isset($$module_name_singular)){
-
-    $user_id_value = ($$module_name_singular->user_name != '')? $$module_name_singular->user_name : '';
-
-    $published_at_value = ($$module_name_singular->moderated_at != '')? $$module_name_singular->moderated_at->isoFormat('llll') : '';
-
-    $moderated_at_value = ($$module_name_singular->moderated_at != '')? $$module_name_singular->moderated_at->isoFormat('llll') : '';
-
-    $parent_name = ($$module_name_singular->parent_id != '')? $$module_name_singular->parent->name : '';
-
+if (isset($$module_name_singular)) {
+    $user_id_value = ($$module_name_singular->user_name != '') ? $$module_name_singular->user_name : '';
+    $parent_name = ($$module_name_singular->parent_id != '') ? $$module_name_singular->parent->name : '';
+    $published_at_value = ($$module_name_singular->moderated_at != '') ? $$module_name_singular->moderated_at->isoFormat('llll') : '';
+    $moderated_at_value = ($$module_name_singular->moderated_at != '') ? $$module_name_singular->moderated_at->isoFormat('llll') : '';
 }
 ?>
 <div class="row mb-3">
-
-    <div class="col">
-        <div class="form-group">
-            <?php
-            $field_name = 'user_id';
-            $field_label = "User";
-            $field_relation = "user";
-            $field_placeholder = "-- Select an option --";
-            $required = "required";
-            $value = $user_id_value;
-            ?>
-            {{ html()->label($field_label, $field_name)->class('form-label') }} {!! fielf_required($required) !!}
-            {{ html()->text($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"])->value($value)->disabled() }}
-            {{ html()->hidden($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"]) }}
-        </div>
-    </div>
-
-    <div class="col">
-        <div class="form-group">
-            <?php
-            $field_name = 'parent_id';
-            $field_label = "Parent Comment";
-            $field_relation = "parent";
-            $field_placeholder = "-- Select an option --";
-            $required = "required";
-            $value = $parent_name;
-            ?>
-            {{ html()->label($field_label, $field_name)->class('form-label') }} {!! fielf_required($required) !!}
-            {{ html()->text($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"])->value($value)->disabled() }}
-            {{ html()->hidden($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"]) }}
-        </div>
-    </div>
-</div>
-<div class="row mb-3">
-    <div class="col-12 col-md-6">
+    <div class="col-6">
         <div class="form-group">
             <?php
             $field_name = 'name';
@@ -63,28 +24,21 @@ if (isset($$module_name_singular)){
             {{ html()->text($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"]) }}
         </div>
     </div>
-    <div class="col-6 col-md-4">
+    <div class="col-6">
         <div class="form-group">
             <?php
-            $field_name = 'slug';
+            $field_name = 'status';
             $field_label = label_case($field_name);
-            $field_placeholder = $field_label;
-            $required = "";
+            $field_placeholder = "-- Select an option --";
+            $required = "required";
+            $select_options = [
+                '0'=>'Pending',
+                '1'=>'Published',
+                '2'=>'Rejected',
+            ];
             ?>
             {{ html()->label($field_label, $field_name)->class('form-label') }} {!! fielf_required($required) !!}
-            {{ html()->text($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"]) }}
-        </div>
-    </div>
-    <div class="col-6 col-md-2">
-        <div class="form-group">
-            <?php
-            $field_name = 'order';
-            $field_label = label_case($field_name);
-            $field_placeholder = $field_label;
-            $required = "";
-            ?>
-            {{ html()->label($field_label, $field_name)->class('form-label') }} {!! fielf_required($required) !!}
-            {{ html()->text($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"]) }}
+            {{ html()->select($field_name, $select_options)->placeholder($field_placeholder)->class('form-control select2-status')->attributes(["$required"]) }}
         </div>
     </div>
 </div>
@@ -103,24 +57,42 @@ if (isset($$module_name_singular)){
     </div>
 </div>
 <div class="row mb-3">
-    <div class="col-4">
+    <div class="col">
         <div class="form-group">
             <?php
-            $field_name = 'status';
-            $field_label = label_case($field_name);
+            $field_name = 'user_id';
+            $field_label = "User";
+            $field_relation = "user";
             $field_placeholder = "-- Select an option --";
             $required = "required";
-            $select_options = [
-                '0'=>'Pending',
-                '1'=>'Published',
-                '2'=>'Rejected',
-            ];
+            $value = $user_id_value;
             ?>
             {{ html()->label($field_label, $field_name)->class('form-label') }} {!! fielf_required($required) !!}
-            {{ html()->select($field_name, $select_options)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"]) }}
+            {{ html()->text($field_name)->placeholder($field_placeholder)->class('form-control select2-users')->attributes(["$required"])->value($value)->disabled() }}
+            {{ html()->hidden($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"]) }}
+            
+            <!--{{ html()->select($field_name, isset($$module_name_singular) ? optional($$module_name_singular->user_name) : '')->placeholder($field_placeholder)->class('form-control select2-users')->attributes(["$required"])->value($value) }}-->
         </div>
     </div>
-    <div class="col-4">
+    <div class="col">
+        <div class="form-group">
+            <?php
+            $field_name = 'parent_id';
+            $field_label = "Parent Comment";
+            $field_relation = "parent";
+            $field_placeholder = "-- Select an option --";
+            $required = "required";
+            $value = $parent_name;
+            ?>
+            {{ html()->label($field_label, $field_name)->class('form-label') }} {!! fielf_required($required) !!}
+            {{ html()->text($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"])->value($value)->disabled() }}
+            {{ html()->hidden($field_name)->placeholder($field_placeholder)->class('form-control')->attributes(["$required"]) }}
+            <!--{{ html()->select($field_name, isset($$module_name_singular) ? optional($$module_name_singular->parent_id) : '')->placeholder($field_placeholder)->class('form-control select2-posts')->attributes(["$required"])->value($value) }}-->
+        </div>
+    </div>
+</div>
+<div class="row mb-3">
+    <div class="col-6">
         <div class="form-group">
             <?php
             $field_name = 'moderated_at';
@@ -134,7 +106,7 @@ if (isset($$module_name_singular)){
             {{ html()->hidden($field_name)->class('form-control')->attributes(["$required"]) }}
         </div>
     </div>
-    <div class="col-4">
+    <div class="col-6">
         <div class="form-group">
             <?php
             $field_name = 'published_at';
@@ -152,86 +124,86 @@ if (isset($$module_name_singular)){
 
 @push('after-styles')
 
-<!-- Select2 Bootstrap 4 Core UI -->
-<link href="{{ asset('vendor/select2/select2-coreui-bootstrap4.min.css') }}" rel="stylesheet" />
-
 <!-- Date Time Picker -->
-<link rel="stylesheet" href="{{ asset('vendor/bootstrap-4-datetime-picker/datetime-picker.min.css') }}" />
+<link href="{{ asset('vendor/datetime-picker/datetime-picker.css') }}" rel="stylesheet">
 
 @endpush
 
+<!-- Select2 Library -->
+<x-library.select2 />
+
 @push ('after-scripts')
-<!-- Select2 -->
+
 <script src="{{ asset('vendor/select2/select2.min.js') }}"></script>
 <script type="module">
-$(document).ready(function() {
-    $('.select2-users').select2({
-        theme: "bootstrap",
-        placeholder: "-- Select an option --",
-        minimumInputLength: 2,
-        allowClear: true,
-        ajax: {
-            url: '{{route("backend.users.index_list")}}',
-            dataType: 'json',
-            data: function (params) {
-                return {
-                    q: $.trim(params.term)
-                };
-            },
-            processResults: function (data) {
-                return {
-                    results: data
-                };
-            },
-            cache: true
-        }
-    });
+    $(document).ready(function() {
+        $(document).on('select2:open', () => {
+            document.querySelector('.select2-search__field').focus();
+            document.querySelector('.select2-container--open .select2-search__field').focus();
+        });
 
-    $('.select2-posts').select2({
-        theme: "bootstrap",
-        placeholder: "-- Select an option --",
-        minimumInputLength: 2,
-        allowClear: true,
-        ajax: {
-            url: '{{route("backend.posts.index_list")}}',
-            dataType: 'json',
-            data: function (params) {
-                return {
-                    q: $.trim(params.term)
-                };
-            },
-            processResults: function (data) {
-                return {
-                    results: data
-                };
-            },
-            cache: true
+        if($('.select2-users').length > 0) {
+            $('.select2-users').select2({
+                theme: "bootstrap4",
+                placeholder: "-- Select an option --",
+                minimumInputLength: 0,
+                allowClear: true,
+                ajax: {
+                    url: '{{route("backend.users.index_list")}}',
+                    dataType: 'json',
+                    data: function (params) {
+                        return {
+                            q: $.trim(params.term)
+                        };
+                    },
+                    processResults: function (data) {
+                        return {
+                            results: data
+                        };
+                    },
+                    cache: true
+                }
+            });
+        }
+        
+        if($('.select2-posts').length > 0) {
+            $('.select2-posts').select2({
+                theme: "bootstrap4",
+                placeholder: "-- Select an option --",
+                minimumInputLength: 0,
+                allowClear: true,
+                ajax: {
+                    url: '{{route("backend.posts.index_list")}}',
+                    dataType: 'json',
+                    data: function (params) {
+                        return {
+                            q: $.trim(params.term)
+                        };
+                    },
+                    processResults: function (data) {
+                        return {
+                            results: data
+                        };
+                    },
+                    cache: true
+                }
+            });
         }
     });
-});
 </script>
 
-<!-- Date Time Picker & Moment Js-->
-<script type="module" src="{{ asset('vendor/moment/moment.min.js') }}"></script>
-<script type="module" src="{{ asset('vendor/bootstrap-4-datetime-picker/datetime-picker.min.js') }}"></script>
-
+<!-- Datetime-picker & Moment Js-->
+<script src="{{ asset('vendor/moment/moment.min.js') }}"></script>
+<script src="{{ asset('vendor/datetime-picker/datetime-picker.js') }}"></script>
 <script type="module">
-$(function() {
-    $('.datetime').datetimepicker({
-        format: 'YYYY-MM-DD HH:mm:ss',
-        icons: {
-            time: 'far fa-clock',
-            date: 'far fa-calendar-alt',
-            up: 'fas fa-arrow-up',
-            down: 'fas fa-arrow-down',
-            previous: 'fas fa-chevron-left',
-            next: 'fas fa-chevron-right',
-            today: 'far fa-calendar-check',
-            clear: 'far fa-trash-alt',
-            close: 'fas fa-times'
-        }
+    new DateTimePicker("published_at", {
+        singleDatePicker: true,
+        timePicker: true,
+        timePicker24Hour: true,
+        locale: {
+            format: "YYYY-MM-DD HH:mm:ss",
+        },
     });
-});
 </script>
 
 @endpush

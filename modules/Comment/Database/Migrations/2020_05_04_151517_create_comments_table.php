@@ -17,7 +17,6 @@ class CreateCommentsTable extends Migration
             $table->bigIncrements('id');
 
             $table->string('name')->nullable();
-            $table->string('slug')->nullable();
             $table->text('comment')->nullable();
 
             $table->integer('parent_id')->unsigned()->nullable();
@@ -28,7 +27,6 @@ class CreateCommentsTable extends Migration
             $table->integer('user_id')->unsigned()->nullable();
             $table->string('user_name')->nullable();
 
-            $table->string('order')->nullable();
             $table->tinyInteger('status')->default(0);
 
             $table->integer('moderated_by')->unsigned()->nullable();

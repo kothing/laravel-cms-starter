@@ -19,9 +19,9 @@
                 @lang(":module_name Management Dashboard", ['module_name'=>Str::title($module_name)])
             </x-slot>
             <x-slot name="toolbar">
-                @can('add_'.$module_name)
+                <!-- @can('add_'.$module_name)
                 <x-buttons.create route='{{ route("backend.$module_name.create") }}' title="{{__('Create')}} {{ ucwords(Str::singular($module_name)) }}" />
-                @endcan
+                @endcan -->
 
                 @can('restore_'.$module_name)
                 <div class="btn-group">

@@ -24,7 +24,6 @@ class CommentFactory extends Factory
     {
         return [
             'name' => $this->faker->sentence(2),
-            'slug' => '',
             'comment' => $this->faker->paragraph,
             'user_id' => $this->faker->numberBetween(1, 4),
             'commentable_id' => $this->faker->numberBetween(1, 25),
