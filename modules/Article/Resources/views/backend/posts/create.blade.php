@@ -38,13 +38,13 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="form-group">
-                            {{ html()->button($text = "<i class='fas fa-plus-circle'></i> " . ucfirst($module_action) . "", $type = 'submit')->class('btn btn-success') }}
+                            {{ html()->button($text = "<i class='fas fa-plus-circle'></i> " .  __(ucfirst($module_action)) . "", $type = 'submit')->class('btn btn-success') }}
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="float-end">
                             <div class="form-group">
-                                <button type="button" class="btn btn-warning" onclick="history.back(-1)"><i class="fas fa-reply"></i> Cancel</button>
+                                <button type="button" class="btn btn-warning" onclick="history.back(-1)"><i class="fas fa-reply"></i> @lang('Cancel')</button>
                             </div>
                         </div>
                     </div>

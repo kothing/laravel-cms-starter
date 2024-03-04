@@ -37,7 +37,7 @@
                 <div class="row">
                     <div class="col-4">
                         <div class="form-group">
-                            {{ html()->submit($text = icon('fas fa-save')." Save")->class('btn btn-success') }}
+                            {{ html()->submit($text = icon('fas fa-save').__("Save"))->class('btn btn-success') }}
                         </div>
                     </div>
 
@@ -46,7 +46,7 @@
                             @can('delete_'.$module_name)
                             <a href="{{route("backend.$module_name.destroy", $$module_name_singular)}}" class="btn btn-danger" data-method="DELETE" data-token="{{csrf_token()}}" data-toggle="tooltip" title="{{__('labels.backend.delete')}}"><i class="fas fa-trash-alt"></i></a>
                             @endcan
-                            <a href="{{ route("backend.$module_name.index") }}" class="btn btn-warning" data-toggle="tooltip" title="{{__('labels.backend.cancel')}}"><i class="fas fa-reply"></i> Cancel</a>
+                            <a href="{{ route("backend.$module_name.index") }}" class="btn btn-warning" data-toggle="tooltip" title="{{__('labels.backend.cancel')}}"><i class="fas fa-reply"></i> @lang('Cancel')</a>
                         </div>
                     </div>
                 </div>
