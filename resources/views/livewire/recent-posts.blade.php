@@ -4,7 +4,7 @@
             @lang('Recent Posts')
         </h3>
         <p class="max-w-2xl text-sm text-gray-500 mb-0">
-            Recently published articles!
+            {{__('Recently published posts')}}
         </p>
     </div>
     <ul class="w-full py-3">

@@ -1,10 +1,4 @@
 {
-    "The :attribute must contain at least one letter.": "The :attribute must contain at least one letter.",
-    "The :attribute must contain at least one number.": "The :attribute must contain at least one number.",
-    "The :attribute must contain at least one symbol.": "The :attribute must contain at least one symbol.",
-    "The :attribute must contain at least one uppercase and one lowercase letter.": "The :attribute must contain at least one uppercase and one lowercase letter.",
-    "The given :attribute has appeared in a data leak. Please choose a different :attribute.": "The given :attribute has appeared in a data leak. Please choose a different :attribute.",
-
     "Welcome to": "欢迎来到 :name 管理面板",
     "Dashboard": "控制面板",
     "Admin Dashboard": "管理面板",
@@ -118,5 +112,18 @@
     "Published": "Published",
     "Unpublished": "Unpublished",
 
-    "View details": "查看详情"
+    "View details": "查看详情",
+
+    "Recent Pages": "最新页面",
+    "Recently published pages": "最新发布的页面",
+    "Recent Posts": "最新日志",
+    "Recently published posts": "最新发布的日志",
+    "Recent Subjects": "最新收藏",
+    "Recently published Subjects": "最新发布的网址",
+
+    "The :attribute must contain at least one letter.": ":attribute 必须至少包含一个字母",
+    "The :attribute must contain at least one number.": ":attribute 必须至少包含一个数字",
+    "The :attribute must contain at least one symbol.": ":attribute 必须至少包含一个symbol符号",
+    "The :attribute must contain at least one uppercase and one lowercase letter.": ":attribute 必须至少包含一个大写字母和一个小写字母",
+    "The given :attribute has appeared in a data leak. Please choose a different :attribute.": "The given :attribute has appeared in a data leak. Please choose a different :attribute. 给定的 :attribute 出现在数据泄漏中。请选择其他 :attribute"
 }

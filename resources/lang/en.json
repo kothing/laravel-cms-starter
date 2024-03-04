@@ -1,10 +1,4 @@
 {
-    "The :attribute must contain at least one letter.": "The :attribute must contain at least one letter.",
-    "The :attribute must contain at least one number.": "The :attribute must contain at least one number.",
-    "The :attribute must contain at least one symbol.": "The :attribute must contain at least one symbol.",
-    "The :attribute must contain at least one uppercase and one lowercase letter.": "The :attribute must contain at least one uppercase and one lowercase letter.",
-    "The given :attribute has appeared in a data leak. Please choose a different :attribute.": "The given :attribute has appeared in a data leak. Please choose a different :attribute.",
-
     "Welcome to": "Welcome to :name Admin Dashboard.",
     "Dashboard": "Dashboard",
     "Admin Dashboard": "Admin Dashboard",
@@ -118,5 +112,16 @@
     "Published": "Published",
     "Unpublished": "Unpublished",
 
-    "View details": "View details"
+    "View details": "View details",
+
+    "Recent Pages": "Recent Pages",
+    "Recently published pages": "Recently published pages",
+    "Recent Posts": "Recent Posts",
+    "Recently published posts": "Recently published posts",
+
+    "The :attribute must contain at least one letter.": "The :attribute must contain at least one letter.",
+    "The :attribute must contain at least one number.": "The :attribute must contain at least one number.",
+    "The :attribute must contain at least one symbol.": "The :attribute must contain at least one symbol.",
+    "The :attribute must contain at least one uppercase and one lowercase letter.": "The :attribute must contain at least one uppercase and one lowercase letter.",
+    "The given :attribute has appeared in a data leak. Please choose a different :attribute.": "The given :attribute has appeared in a data leak. Please choose a different :attribute."
 }
