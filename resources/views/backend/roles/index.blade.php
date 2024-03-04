@@ -41,9 +41,11 @@
                                 </strong>
                             </td>
                             <td>
-                                @foreach ($module_name_singular->permissions as $permission)
-                                <li>{{ $permission->name }}</li>
-                                @endforeach
+                                <ul>
+                                    @foreach ($module_name_singular->permissions as $permission)
+                                    <li>{{ $permission->name }}</li>
+                                    @endforeach
+                                </ul>
                             </td>
                             <td class="text-end">
                                 @can('edit_'.$module_name)

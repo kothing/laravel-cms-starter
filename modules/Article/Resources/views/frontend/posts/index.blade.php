@@ -8,7 +8,7 @@
     <div class="container mx-auto flex px-5 items-center justify-center flex-col">
         <div class="text-center lg:w-2/3 w-full">
             <h1 class="text-3xl sm:text-4xl mb-4 font-medium text-gray-800">
-                {{ __("Articles") }}
+                {{ __("Article") }}
             </h1>
             <p class="mb-8 leading-relaxed">
                 We publish articles on a number of topics.

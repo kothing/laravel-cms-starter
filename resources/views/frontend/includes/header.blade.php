@@ -30,7 +30,7 @@
                             {{__('Pages')}}
                         </a>
                         <a href="{{ route('frontend.posts.index') }}" class="text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
-                            {{__('Posts')}}
+                            {{__('Article')}}
                         </a>
                     </div>
                 </div>
