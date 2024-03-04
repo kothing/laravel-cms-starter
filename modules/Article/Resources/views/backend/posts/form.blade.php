@@ -106,8 +106,8 @@
             $required = "required";
             $select_options = [
                 'Article' => 'Article',
-                'Feature' => 'Feature',
-                'News' => 'News',
+                // 'Feature' => 'Feature',
+                // 'News' => 'News',
             ];
             ?>
             {{ html()->label($field_label, $field_name) }} {!! fielf_required($required) !!}
@@ -125,9 +125,9 @@
             $field_placeholder = __("Select an option");
             $required = "required";
             $select_options = [
-                '1' => 'Published',
-                '0' => 'Unpublished',
-                '2' => 'Draft'
+                '1' => __('Published'),
+                '0' => __('Unpublished'),
+                '2' => __('Draft')
             ];
             ?>
             {{ html()->label($field_label, $field_name) }} {!! fielf_required($required) !!}
@@ -175,8 +175,8 @@
             $field_placeholder = __("Select an option");
             $required = "";
             $select_options = [
-                '1' => 'Yes',
-                '0' => 'No',
+                '1' => __('Yes'),
+                '0' => __('No'),
             ];
             ?>
             {{ html()->label($field_label, $field_name) }} {!! fielf_required($required) !!}
