@@ -36,10 +36,10 @@
                     <div class="card card-accent-primary mb-4">
                         <div class="card-header">
                             <i class="{{ Arr::get($fields, 'icon', 'glyphicon glyphicon-flash') }}"></i>
-                            {{ $fields['title'] }}
+                            {{ __($fields['title']) }}
                         </div>
                         <div class="card-body">
-                            <p class="text-muted">{{ $fields['desc'] }}</p>
+                            <p class="text-muted">{{ __($fields['desc']) }}</p>
 
                             <div class="row mb-3">
                                 <div class="col">

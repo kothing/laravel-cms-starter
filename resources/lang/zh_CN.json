@@ -3,6 +3,33 @@
     "Dashboard": "控制面板",
     "Admin Dashboard": "管理面板",
 
+    "General": "基本设置",
+    "All the general settings for application": "应用程序的所有常规设置",
+    "App Name": "应用名称",
+    "Footer Text": "页脚文字",
+    "Show Copyright": "显示版权",
+    
+    "Meta": "Meta设置",
+    "Application Meta Data": "应用Meat数据",
+    "Meta Site Name": "Meta网址名称",
+    "Meta Description": "Meta描述",
+    "Meta Keyword": "Meta关键字",
+    "Meta Image": "Meta图像",
+    "Email settings for app": "应用程序的电子邮件",
+    
+    "Analytics": "分析设置",
+    "Application Analytics": "应用分析设置",
+    "Google Analytics": "Google Analytics",
+    
+    "Custom Code": "自定义代码",
+    "Custom code area": "自定义代码区域",
+    "Custom Css Code": "自定义样式代码",
+    "Paste the code in this field.": "将代码粘贴到该字段中",
+    
+    "Social Profiles": "社交档案",
+    "Link of all the online/social profiles.": "所有在线/社交资料的链接",
+    "Website URL": "网址URL",
+
     "Name": "名字",
     "Email": "邮箱",
     "Password": "密码",
