@@ -31,9 +31,9 @@
             $field_placeholder = "-- Select an option --";
             $required = "required";
             $select_options = [
-                '1'=>'Published',
-                '0'=>'Unpublished',
-                '2'=>'Draft'
+                '1'=>__('Published'),
+                '0'=>__('Unpublished'),
+                '2'=>__('Draft')
             ];
             ?>
             {{ html()->label($field_label, $field_name)->class('form-label') }} {!! fielf_required($required) !!}
