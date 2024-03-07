@@ -83,7 +83,7 @@ return [
                 'password' => 'Password',
                 'password_confirmation' => 'Password Confirmation',
                 'confirmed' => 'Confirmed',
-                'active' => 'Active',
+                'active' => '激活',
                 'email_credentials' => 'Email Credentials',
                 'roles' => 'Roles',
                 'permissions' => 'Permissions',

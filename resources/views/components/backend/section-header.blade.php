@@ -18,7 +18,7 @@
         </div>
         @else
         <div class="small text-medium-emphasis">
-            @lang(":module_name Management Dashboard", ['module_name'=>Str::title($module_name)])
+            @lang(":module_name Management Dashboard", ['module_name'=>__(Str::title($module_name))])
         </div>
         @endif
     </div>

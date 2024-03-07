@@ -3,7 +3,7 @@
 return [
 
     'name' => '名称',
-    'slug' => 'Slug',
+    'slug' => '别名',
     'description' => '描述',
     'content' => '内容',
     'status' => '状态',

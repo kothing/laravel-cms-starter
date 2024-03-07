@@ -30,12 +30,12 @@
             <?php
             $field_name = 'status';
             $field_label = label_case($field_name);
-            $field_placeholder = "-- Select an option --";
+            $field_placeholder = __("Select an option");
             $required = "required";
             $select_options = [
-                'Active' => 'Active',
-                'Inactive' => 'Inactive',
-                'Draft' => 'Draft'
+                'Active' => __('Active'),
+                'Inactive' => __('Inactive'),
+                'Draft' => __('Draft')
             ];
             ?>
             {{ html()->label($field_label, $field_name)->class('form-label') }} {!! fielf_required($required) !!}

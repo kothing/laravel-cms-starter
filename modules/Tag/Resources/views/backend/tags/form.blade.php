@@ -30,7 +30,7 @@
             <?php
             $field_name = 'status';
             $field_label = __("tag::$module_name.$field_name");
-            $field_placeholder = "-- Select an option --";
+            $field_placeholder = __("Select an option");
             $required = "required";
             $select_options = [
                 '1' => 'Published',

@@ -29,7 +29,7 @@ if (isset($$module_name_singular)) {
             <?php
             $field_name = 'status';
             $field_label = label_case($field_name);
-            $field_placeholder = "-- Select an option --";
+            $field_placeholder = __("Select an option");
             $required = "required";
             $select_options = [
                 '0'=>'Pending',
@@ -63,7 +63,7 @@ if (isset($$module_name_singular)) {
             $field_name = 'user_id';
             $field_label = "User";
             $field_relation = "user";
-            $field_placeholder = "-- Select an option --";
+            $field_placeholder = __("Select an option");
             $required = "required";
             $value = $user_id_value;
             ?>
@@ -80,7 +80,7 @@ if (isset($$module_name_singular)) {
             $field_name = 'parent_id';
             $field_label = "Parent Comment";
             $field_relation = "parent";
-            $field_placeholder = "-- Select an option --";
+            $field_placeholder = __("Select an option");
             $required = "required";
             $value = $parent_name;
             ?>

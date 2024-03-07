@@ -21,7 +21,7 @@
         <i class="{{ $module_icon }}"></i> {{ __('Profile') }} <small class="text-muted">{{ __($module_action) }}</small>
 
         <x-slot name="subtitle">
-            @lang(":module_name Management Dashboard", ['module_name'=>Str::title($module_name)])
+            @lang(":module_name Management Dashboard", ['module_name'=>__(Str::title($module_name))])
         </x-slot>
         <x-slot name="toolbar">
             <x-backend.buttons.return-back />
@@ -101,7 +101,7 @@
                         <?php
                         $field_name = 'gender';
                         $field_label = label_case($field_name);
-                        $field_placeholder = "-- Select an option --";
+                        $field_placeholder = __("Select an option");
                         $required = "";
                         $select_options = [
                             'Female' => 'Female',

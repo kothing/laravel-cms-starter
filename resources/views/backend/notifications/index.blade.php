@@ -17,7 +17,7 @@
             <small class="text-muted">{{ __($module_action) }}</small>
 
             <x-slot name="subtitle">
-                @lang(":module_name Management Dashboard", ['module_name'=>Str::title($module_name)])
+                @lang(":module_name Management Dashboard", ['module_name'=>__(Str::title($module_name))])
             </x-slot>
             <x-slot name="toolbar">
                 <a href="{{ route("backend.$module_name.markAllAsRead") }}" class="btn btn-outline-success mb-1" data-toggle="tooltip" title="@lang('Mark all as read')"><i class="fas fa-check-square"></i> @lang('Mark all as read')</a>
