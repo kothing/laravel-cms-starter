@@ -28,7 +28,7 @@
 
 <!-- Dashboard Content Area -->
 
-@include("backend.includes.dashboard_demo_data")
+@include("backend.includes.dashboard_data")
 
 <!-- / Dashboard Content Area -->
 
