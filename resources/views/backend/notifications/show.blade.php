@@ -21,7 +21,7 @@
                 @lang(":module_name Management Dashboard", ['module_name'=>__(Str::title($module_name))])
             </x-slot>
             <x-slot name="toolbar">
-                <a href='{{ route('backend.$module_name.index') }}' class="btn btn-secondary mt-1 btn-sm" data-toggle="tooltip" title="{{ __($module_name) }} {{ __('List') }}"><i class="fas fa-list"></i> @lang("List")</a>
+                <a href='{{ route("backend.$module_name.index") }}' class="btn btn-secondary mt-1 btn-sm" data-toggle="tooltip" title="{{ __($module_name) }} {{ __('List') }}"><i class="fas fa-list"></i> @lang("List")</a>
             </x-slot>
         </x-backend.section-header>
 
