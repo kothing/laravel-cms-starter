@@ -20,8 +20,8 @@
                 @lang(":module_name Management Dashboard", ['module_name'=>__(Str::title($module_name))])
             </x-slot>
             <x-slot name="toolbar">
-                <a href="{{ route("backend.$module_name.markAllAsRead") }}" class="btn btn-outline-success mb-1" data-toggle="tooltip" title="@lang('Mark all as read')"><i class="fas fa-check-square"></i> @lang('Mark all as read')</a>
-                <a href="{{route("backend.$module_name.deleteAll")}}" class="btn btn-outline-danger mb-1" data-method="DELETE" data-token="{{csrf_token()}}" data-toggle="tooltip" title="@lang('Delete all notifications')"><i class="fas fa-trash-alt"></i></a>
+                <a href='{{ route("backend.$module_name.markAllAsRead") }}' class="btn btn-outline-success mb-1" data-toggle="tooltip" title="@lang('Mark all as read')"><i class="fas fa-check-square"></i> @lang('Mark all as read')</a>
+                <a href='{{route("backend.$module_name.deleteAll")}}' class="btn btn-outline-danger mb-1" data-method="DELETE" data-token="{{csrf_token()}}" data-toggle="tooltip" title="@lang('Delete all notifications')"><i class="fas fa-trash-alt"></i></a>
             </x-slot>
         </x-backend.section-header>
 
@@ -57,7 +57,7 @@
                         ?>
                         <tr class="{{$row_class}}">
                             <td>
-                                <a href="{{ route("backend.$module_name.show", $module_name_singular->id) }}">
+                                <a href='{{ route("backend.$module_name.show", $module_name_singular->id) }}'>
                                     <span class="{{$span_class}}">
                                         {{ $module_name_singular->data['title'] }}
                                     </span>

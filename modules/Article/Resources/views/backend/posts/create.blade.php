@@ -19,11 +19,11 @@
             <i class="{{ $module_icon }}"></i> {{ __($module_title) }} <small class="text-muted">{{ __($module_action) }}</small>
 
             <x-slot name="subtitle">
-                @lang(":module_name Management Dashboard", ['module_name'=>__(Str::title($module_name))])
+                @lang(":module_name Management Dashboard", ['module_name'=>Str::title($module_name)])
             </x-slot>
             <x-slot name="toolbar">
                 <x-backend.buttons.return-back />
-                <a href="{{ route('backend.$module_name.index') }}" class="btn btn-secondary ms-1" data-toggle="tooltip" title="{{ __($module_title) }} List"><i class="fas fa-list-ul"></i> List</a>
+                <a href='{{ route("backend.$module_name.index") }}' class="btn btn-secondary ms-1" data-toggle="tooltip" title="{{ __($module_title) }} {{ __('List') }}"><i class="fas fa-list-ul"></i> @lang("List")</a>
             </x-slot>
         </x-backend.section-header>
 

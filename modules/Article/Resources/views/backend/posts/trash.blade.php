@@ -20,7 +20,7 @@
             </x-slot>
             <x-slot name="toolbar">
                 <x-backend.buttons.return-back />
-                <a href='{{ route("backend.$module_name.index") }}' class="btn btn-secondary" data-toggle="tooltip" title="{{ ucwords($module_name) }} List"><i class="fas fa-list"></i> List</a>
+                <a href='{{ route("backend.$module_name.index") }}' class="btn btn-secondary" data-toggle="tooltip" title="{{ __($module_name) }} {{ __('List') }}"><i class="fas fa-list"></i> @lang("List")</a>
             </x-slot>
         </x-backend.section-header>
 

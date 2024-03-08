@@ -23,7 +23,7 @@
             </x-slot>
             <x-slot name="toolbar">
                 <x-backend.buttons.return-back />
-                <a href="{{ route('backend.$module_name.index') }}" class="btn btn-secondary ms-1" data-toggle="tooltip" title="{{ __($module_title) }} List"><i class="fas fa-list-ul"></i> List</a>
+                <a href='{{ route('backend.$module_name.index') }}' class="btn btn-secondary ms-1" data-toggle="tooltip" title="{{ __($module_title) }} {{ __('List') }}"><i class="fas fa-list-ul"></i> @lang("List")</a>
             </x-slot>
         </x-backend.section-header>
 
