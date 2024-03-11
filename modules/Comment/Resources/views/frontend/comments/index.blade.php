@@ -41,27 +41,25 @@
             </h6>
         </x-frontend.card>
 
-        <!-- <div class="">
-            <div class=" bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <div class="p-5 flex flex-col items-stretch">
-                    <a href="{{$details_url}}">
-                        <h2 class="mb-2 text-2xl tracking-tight text-gray-900 dark:text-white">
-                            {{$$module_name_singular->name}}
-                        </h2>
-                    </a>
-                    <p class="mb-4 flex-1 h-full font-normal text-gray-700 dark:text-gray-400">
-                        {!! $$module_name_singular->comment !!}
-                    </p>
-                    <p class="mb-4">
-                        <small>{{$$module_name_singular->published_at_formatted}}</small>
-                    </p>
+        <!-- <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div class="p-5 flex flex-col items-stretch">
+                <a href="{{$details_url}}">
+                    <h2 class="mb-2 text-2xl tracking-tight text-gray-900 dark:text-white">
+                        {{$$module_name_singular->name}}
+                    </h2>
+                </a>
+                <p class="mb-4 flex-1 h-full font-normal text-gray-700 dark:text-gray-400">
+                    {!! $$module_name_singular->comment !!}
+                </p>
+                <p class="mb-4">
+                    <small>{{$$module_name_singular->published_at_formatted}}</small>
+                </p>
 
-                    <hr class="my-4">
+                <hr class="my-4">
 
-                    <h6>
-                        {{ __('Post') }}: <a class="underline hover:text-gray-800" href="{{route('frontend.posts.show', [encode_id($$module_name_singular->post_id), $$module_name_singular->post->slug])}}">{{$$module_name_singular->post->name}}</a>
-                    </h6>
-                </div>
+                <h6>
+                    {{ __('Post') }}: <a class="underline hover:text-gray-800" href="{{route('frontend.posts.show', [encode_id($$module_name_singular->post_id), $$module_name_singular->post->slug])}}">{{$$module_name_singular->post->name}}</a>
+                </h6>
             </div>
         </div> -->
 

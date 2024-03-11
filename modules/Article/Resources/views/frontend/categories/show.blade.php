@@ -30,8 +30,7 @@
         @php
         $details_url = route("frontend.posts.show",[encode_id($post->id), $post->slug]);
         @endphp
-        <div class="">
-            <div class=" bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 @if($post->featured_image != "")
                 <a href="{{$details_url}}">
                     <img class="rounded-t-lg" src="{{$post->featured_image}}" alt="{{$post->name}}" />
@@ -57,8 +56,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
         @endforeach
     </div>
     <div class="d-flex justify-content-center w-100 mt-4">
