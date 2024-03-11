@@ -531,3 +531,8 @@ a {
     --btn-focus-shadow-rgb: 75, 58, 223;
     text-decoration: underline
 }
+
+.frontend-main-menu .active {
+    --tw-border-opacity: 1;
+    border-color: rgb(234 88 12 / var(--tw-border-opacity));
+}

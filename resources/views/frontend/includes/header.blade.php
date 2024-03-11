@@ -22,14 +22,14 @@
                     </a>
                 </div>
                 <div class="hidden sm:block sm:ml-6">
-                    <div class="flex space-x-4">
-                        <a href="/" class="text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
+                    <div class="frontend-main-menu flex space-x-4">
+                        <a href="{{ route('frontend.index') }}" class="{{ Request::route()->getName() == 'frontend.index' ? 'active ' : ''}}text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
                             {{__('Home')}}
                         </a>
-                        <a href="{{ route('frontend.pages.index') }}" class="text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
+                        <a href="{{ route('frontend.pages.index') }}" class="{{ Request::route()->getName() == 'frontend.pages.index' ? 'active ' : ''}}text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
                             {{__('Pages')}}
                         </a>
-                        <a href="{{ route('frontend.posts.index') }}" class="text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
+                        <a href="{{ route('frontend.posts.index') }}" class="{{ Request::route()->getName() == 'frontend.posts.index' ? 'active ' : ''}}text-gray-600 border-transparent border-b-2 hover:border-orange-600 px-3 py-2 text-base font-medium transition ease-out duration-300">
                             {{__('Article')}}
                         </a>
                     </div>
