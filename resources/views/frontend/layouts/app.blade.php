@@ -25,6 +25,9 @@
     
     @stack('after-styles')
 
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ asset('css/base.css') }}">
+
     <!-- <x-google-analytics \/> -->
 </head>
 
