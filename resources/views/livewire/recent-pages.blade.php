@@ -1,5 +1,5 @@
-<div class="container flex flex-col mx-auto w-full items-center justify-center">
-    <div class="w-full bg-white px-4 py-3 border-b border-gray-100">
+<div class="container w-full mx-auto flex flex-col items-center justify-center border border-gray-200 rounded-md shadow hover:shadow-lg">
+    <div class="w-full px-4 py-3 border-b border-gray-100">
         <h3 class="text-lg leading-6 font-medium text-gray-800">
             @lang('Recent Pages')
         </h3>

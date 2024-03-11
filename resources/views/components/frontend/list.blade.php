@@ -1,6 +1,6 @@
 @props(['url', 'name', 'image'=>''])
 
-<div class="flex flex-col bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg dark:bg-gray-800 dark:border-gray-700">
+<div class="bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg dark:bg-gray-800 dark:border-gray-700">
     @if ($image)
     <div class="rounded-t-lg overflow-hidden">
         <a href="{{$url}}">
@@ -15,7 +15,7 @@
             </h5>
         </a>
     </div>
-    <div class="flex-1 px-5 mb-2 sm:mb-4 font-normal text-sm sm:text-base">
+    <div class="px-5 mb-2 sm:mb-4 font-normal text-sm sm:text-base">
         {!! $slot !!}
     </div>
     <div class="px-5 text-end pb-5">

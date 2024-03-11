@@ -20,19 +20,28 @@
 </section>
 
 <section class="bg-white text-gray-600 p-6 sm:p-20">
-    <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
-        @foreach ($$module_name as $$module_name_singular)
-        @php
-        $details_url = route("frontend.$module_name.show",[encode_id($$module_name_singular->id), $$module_name_singular->slug]);
-        @endphp
+    <div class="mx-auto flex md:flex-row flex-col">
+        <div class="flex flex-col lg:flex-grow sm:w-8/12 sm:pr-8">
+            <div class="grid grid-cols-1 gap-6">
+                @foreach ($$module_name as $$module_name_singular)
+                    @php
+                    $details_url = route("frontend.$module_name.show",[encode_id($$module_name_singular->id), $$module_name_singular->slug]);
+                    @endphp
+                
+                    <x-frontend.list :url="$details_url" :name="$$module_name_singular->name">
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            {{$$module_name_singular->description}}
+                        </p>
+                    </x-frontend.list>
         
-        <x-frontend.card :url="$details_url" :name="$$module_name_singular->name">
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                {{$$module_name_singular->description}}
-            </p>
-        </x-frontend.card>
-
-        @endforeach
+                @endforeach
+            </div>
+        </div>
+        <div class="flex flex-col sm:w-4/12">
+            <div class="py-5 sm:pt-0">
+                <livewire:recent-pages />
+            </div>
+        </div>
     </div>
     <div class="d-flex justify-content-center w-100 mt-3">
         {{$$module_name->links()}}

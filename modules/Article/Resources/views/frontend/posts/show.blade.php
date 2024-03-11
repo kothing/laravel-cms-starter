@@ -32,32 +32,30 @@
 </section>
 
 <section class="py-6 sm:py-10 px-6 sm:px-20">
-    <div class="container mx-auto flex md:flex-row flex-col">
-        <div class="flex flex-col lg:flex-grow sm:w-8/12 sm:pr-8">
-            <div class="pb-5">
+    <div class="container mx-auto">
+        <div class="w-full flex flex-col">
+            <div class="pb-5 border-b">
                 <p>
                     {!!$$module_name_singular->content!!}
                 </p>
             </div>
 
-            <hr>
-
             <div class="py-5 border-b">
                 <div class="flex flex-col sm:flex-row justify-between">
                     <div class="pb-2">
-                        {{__('Written by')}}: {{isset($$module_name_singular->created_by_alias)? $$module_name_singular->created_by_alias : $$module_name_singular->created_by_name}}
+                        @lang('Written by'): {{isset($$module_name_singular->created_by_alias)? $$module_name_singular->created_by_alias : $$module_name_singular->created_by_name}}
                     </div>
                     <div class="pb-2">
-                        {{__('Created at')}}: {{$$module_name_singular->created_at->isoFormat('llll')}}
+                        @lang('Created at'): {{$$module_name_singular->created_at->isoFormat('llll')}}
                     </div>
                 </div>
             </div>
 
             <div class="flex flex-row items-center py-5 border-b">
                 <span class="font-weight-bold">
-                        @lang('Category'):
-                    </span>
-                    <x-frontend.badge :url="route('frontend.categories.show', [encode_id($$module_name_singular->category_id), $$module_name_singular->category->slug])" :text="$$module_name_singular->category_name" />
+                    @lang('Categories'):
+                </span>
+                <x-frontend.badge :url="route('frontend.categories.show', [encode_id($$module_name_singular->category_id), $$module_name_singular->category->slug])" :text="$$module_name_singular->category_name" />
             </div>
 
             @if (count($$module_name_singular->tags))
@@ -74,12 +72,6 @@
 
             <div class="py-5">
                 @include('article::frontend.posts.blocks.comments')
-            </div>
-        </div>
-
-        <div class="flex flex-col sm:w-4/12">
-            <div class="py-5 sm:pt-0">
-                <livewire:recent-posts />
             </div>
         </div>
     </div>
