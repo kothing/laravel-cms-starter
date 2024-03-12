@@ -19,6 +19,7 @@
 
     <!-- Styles -->
     @vite(['resources/assets/css/app-backend.scss'])
+    <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+UI&display=swap" rel="stylesheet" />
     @stack('after-styles')
