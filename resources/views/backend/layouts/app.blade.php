@@ -5,33 +5,27 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="{{asset('images/favicon.svg')}}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/favicon.svg')}}">
+    <title>@yield('title') | {{ config('app.name') }}</title>
     <meta name="keyword" content="{{ setting('meta_keyword') }}">
     <meta name="description" content="{{ setting('meta_description') }}">
 
     <!-- Shortcut Icon -->
     <link rel="shortcut icon" href="{{asset('images/favicon.svg')}}">
-    <link rel="icon" type="image/ico" href="{{asset('images/favicon.svg')}}" />
+    <link rel="icon" type="image/svg" href="{{asset('images/favicon.svg')}}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/favicon.svg')}}">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title') | {{ config('app.name') }}</title>
-
-    <script src="{{asset('vendor/jquery/jquery@3.2.1-min.js')}}"></script>
-
-    @vite(['resources/assets/css/app-backend.scss', 'resources/assets/js/app-backend.js'])
-
+    <!-- Styles -->
+    @vite(['resources/assets/css/app-backend.scss'])
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+UI&display=swap" rel="stylesheet" />
-
     @stack('after-styles')
+    @livewireStyles
+    <!-- Styles -->
 
     <!-- <x-google-analytics \/> -->
-
-    @livewireStyles
-
 </head>
 
 <body>
@@ -67,6 +61,8 @@
     </main>
 
     <!-- Scripts -->
+    <script src="{{asset('vendor/jquery/jquery@3.2.1-min.js')}}"></script>
+    @vite(['resources/assets/js/app-backend.js'])
     @livewireScriptConfig
     @stack('after-scripts')
     <!-- / Scripts -->
