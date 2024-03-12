@@ -39,12 +39,12 @@ class GenerateMenus
             ]);
 
             // Separator: Access Management
-            $menu->add(__('Management'), [
-                'class' => 'nav-title',
-            ])->data([
-                'order' => 101,
-                'permission' => ['edit_settings', 'view_backups', 'view_users', 'view_roles', 'view_logs'],
-            ]);
+            // $menu->add(__('Management'), [
+            //     'class' => 'nav-title',
+            // ])->data([
+            //     'order' => 101,
+            //     'permission' => ['edit_settings', 'view_backups', 'view_users', 'view_roles', 'view_logs'],
+            // ]);
 
             // Settings
             $menu->add('<i class="nav-icon fas fa-cogs"></i> '.__('Settings'), [
