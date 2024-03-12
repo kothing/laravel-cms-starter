@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 
-@section('title') {{ __("Categories") }} @endsection
+@section('title') {{ __($module_title) }} @endsection
 
 @section('content')
 
@@ -8,10 +8,10 @@
     <div class="container mx-auto flex px-5 items-center justify-center flex-col">
         <div class="text-center lg:w-2/3 w-full">
             <h1 class="text-3xl sm:text-4xl mb-4 font-medium text-gray-800">
-                {{ __("Categories") }}
+                {{ __($module_title) }}
             </h1>
             <p class="mb-8 leading-relaxed">
-                The list of categories.
+                The list of {{ __($module_name) }}.
             </p>
 
             @include('frontend.includes.messages')
