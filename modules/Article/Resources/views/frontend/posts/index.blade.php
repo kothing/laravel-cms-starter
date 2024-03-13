@@ -54,14 +54,22 @@
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
                             {{$$module_name_singular->intro}}
                         </p>
-                        <p>
+                        <div class="flex flex-row items-center">
+                            <span class="w-6">
+                                <i class="fa fa-fw fa-folder-open"></i>
+                            </span>
                             <x-frontend.badge :url="route('frontend.categories.show', [encode_id($$module_name_singular->category_id), $$module_name_singular->category->slug])" :text="$$module_name_singular->category_name" />
-                        </p>
-                        <p>
+                        </div>
+                        @if(count($$module_name_singular->tags))
+                        <div class="flex flex-row items-center">
+                            <span class="w-6">
+                                <i class="fa fa-tag"></i> 
+                            </span>
                             @foreach ($$module_name_singular->tags as $tag)
                             <x-frontend.badge :url="route('frontend.tags.show', [encode_id($tag->id), $tag->slug])" :text="$tag->name" />
                             @endforeach
-                        </p>
+                        </div>
+                        @endif
                     </x-frontend.list>
                 @endforeach
             </div>
