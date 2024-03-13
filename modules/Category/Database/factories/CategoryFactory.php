@@ -28,7 +28,6 @@ class CategoryFactory extends Factory
             'name'              => substr($this->faker->text(15), 0, -1),
             'slug'              => '',
             'description'       => $this->faker->paragraph,
-            'content'           => $this->faker->paragraphs(rand(5, 7), true),
             'status'            => 1,
             'created_at'        => Carbon::now(),
             'updated_at'        => Carbon::now(),
