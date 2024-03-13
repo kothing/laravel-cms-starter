@@ -21,6 +21,13 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->text('content')->nullable();
             $table->tinyInteger('status')->default(1);
+            $table->string('created_by_alias')->nullable();
+
+            $table->string('meta_title')->nullable();
+            $table->text('meta_keywords')->nullable();
+            $table->text('meta_description')->nullable();
+            $table->string('meta_og_image')->nullable();
+            $table->string('meta_og_url')->nullable();
 
             $table->integer('created_by')->unsigned()->nullable();
             $table->integer('updated_by')->unsigned()->nullable();

@@ -30,6 +30,11 @@ class PageFactory extends Factory
             'description'       => $this->faker->paragraph,
             'content'           => $this->faker->paragraphs(rand(5, 7), true),
             'status'            => 1,
+            'meta_title' => '',
+            'meta_keywords' => '',
+            'meta_description' => '',
+            'meta_og_image' => '',
+            'meta_og_url' => '',
             'created_at'        => Carbon::now(),
             'updated_at'        => Carbon::now(),
         ];
