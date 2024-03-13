@@ -84,7 +84,7 @@ class TagsController extends Controller
 
         return view(
             "tag::frontend.{$module_name}.show",
-            compact('module_title', 'module_name', 'module_icon', 'module_action', 'module_name_singular', "{$module_name_singular}", 'posts')
+            compact('module_title', 'module_name', 'module_icon', 'module_action', 'module_name_singular', "$module_name_singular", 'posts')
         );
     }
 }

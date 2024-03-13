@@ -90,7 +90,7 @@ class CategoriesController extends BackendBaseController
 
         return view(
             "{$module_path}.{$module_name}.show",
-            compact('module_title', 'module_name', 'module_path', 'module_icon', 'module_name_singular', 'module_action', "{$module_name_singular}", 'posts')
+            compact('module_title', 'module_name', 'module_path', 'module_icon', 'module_name_singular', 'module_action', "$module_name_singular", 'posts')
         );
     }
 

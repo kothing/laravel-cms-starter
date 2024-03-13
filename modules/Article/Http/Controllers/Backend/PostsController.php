@@ -71,7 +71,7 @@ class PostsController extends Controller
 
         return view(
             "article::backend.{$module_path}.index_datatable",
-            compact('module_title', 'module_name', "{$module_name}", 'module_icon', 'module_name_singular', 'module_action')
+            compact('module_title', 'module_name', "$module_name", 'module_icon', 'module_name_singular', 'module_action')
         );
     }
 
@@ -241,7 +241,7 @@ class PostsController extends Controller
 
         return view(
             "article::backend.{$module_name}.show",
-            compact('module_title', 'module_name', 'module_icon', 'module_name_singular', 'module_action', "{$module_name_singular}", 'activities')
+            compact('module_title', 'module_name', 'module_icon', 'module_name_singular', 'module_action', "$module_name_singular", 'activities')
         );
     }
 
@@ -270,7 +270,7 @@ class PostsController extends Controller
 
         return view(
             "article::backend.{$module_name}.edit",
-            compact('categories', 'module_title', 'module_name', 'module_icon', 'module_name_singular', 'module_action', "{$module_name_singular}")
+            compact('categories', 'module_title', 'module_name', 'module_icon', 'module_name_singular', 'module_action', "$module_name_singular")
         );
     }
 
@@ -365,7 +365,7 @@ class PostsController extends Controller
 
         return view(
             "article::backend.{$module_name}.trash",
-            compact('module_title', 'module_name', "{$module_name}", 'module_icon', 'module_name_singular', 'module_action')
+            compact('module_title', 'module_name', "$module_name", 'module_icon', 'module_name_singular', 'module_action')
         );
     }
 

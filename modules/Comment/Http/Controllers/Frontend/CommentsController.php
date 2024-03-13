@@ -56,7 +56,7 @@ class CommentsController extends Controller
 
         return view(
             "comment::frontend.{$module_name}.index",
-            compact('module_title', 'module_name', "{$module_name}", 'module_icon', 'module_action', 'module_name_singular')
+            compact('module_title', 'module_name', "$module_name", 'module_icon', 'module_action', 'module_name_singular')
         );
     }
 
