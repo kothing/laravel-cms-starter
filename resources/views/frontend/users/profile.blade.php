@@ -27,25 +27,27 @@
 
                 @auth
 
-                @if (auth()->user()->id == $$module_name_singular->id)
-                <div class="mt-8">
-                    <a href='{{ route("frontend.users.profileEdit", encode_id($$module_name_singular->id)) }}'>
-                        <div class="w-full text-sm px-6 py-2 outline bg-gray-100 transition ease-in duration-200 rounded text-gray-500 hover:bg-gray-800 hover:text-white border-1 border-gray-900 focus:outline-none">
-                            Edit Profile
-                        </div>
-                    </a>
-                </div>
-                @endif
+                <div class="flex justify-around">
+                    @if (auth()->user()->id == $$module_name_singular->id)
+                    <div class="mt-8">
+                        <a href='{{ route("frontend.users.profileEdit", encode_id($$module_name_singular->id)) }}'>
+                            <div class="w-full text-sm px-6 py-2 outline bg-gray-100 transition ease-in duration-200 rounded text-gray-500 hover:bg-gray-800 hover:text-white border-1 border-gray-900 focus:outline-none">
+                                {{__("Edit Profile")}}
+                            </div>
+                        </a>
+                    </div>
+                    @endif
 
-                @if (auth()->user()->username == $$module_name_singular->username)
-                <div class="mt-8">
-                    <a href="{{ route('frontend.users.changePassword', $$module_name_singular->username) }}">
-                        <div class="w-full text-sm px-6 py-2 outline bg-gray-100 transition ease-in duration-200 rounded text-gray-500 hover:bg-gray-800 hover:text-white border-1 border-gray-900 focus:outline-none">
-                            Change Password
-                        </div>
-                    </a>
+                    @if (auth()->user()->username == $$module_name_singular->username)
+                    <div class="mt-8">
+                        <a href="{{ route('frontend.users.changePassword', encode_id($$module_name_singular->id)) }}">
+                            <div class="w-full text-sm px-6 py-2 outline bg-gray-100 transition ease-in duration-200 rounded text-gray-500 hover:bg-gray-800 hover:text-white border-1 border-gray-900 focus:outline-none">
+                                {{__("Change Password")}}
+                            </div>
+                        </a>
+                    </div>
+                    @endif
                 </div>
-                @endif
 
                 @endauth
 

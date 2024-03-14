@@ -16,7 +16,7 @@
             <div class="px-4 sm:px-0">
                 <h3 class="text-xl font-semibold leading-6 text-gray-800">@lang('Change Password')</h3>
                 <p class="mt-1 text-sm text-gray-600">
-                    Use the following form to change your account password!
+                    @lang('Use the following form to change your account password!')
                 </p>
 
                 <div class="pt-4 text-center">
@@ -70,7 +70,7 @@
                 <div class="px-4 sm:px-0">
                     <h3 class="text-lg font-medium leading-6 text-gray-800">Edit Profile</h3>
                     <p class="mt-1 text-sm text-gray-600">
-                        Update account information.
+                        @lang('Update account information')
                     </p>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                         <div class="col-span-6 text-center">
                             <a href="{{ route('frontend.users.profileEdit', encode_id($$module_name_singular->id)) }}">
                                 <div class="w-full font-semibold text-sm px-6 py-2 outline transition ease-in duration-200 rounded text-gray-500 hover:bg-gray-800 hover:text-white border-1 border-gray-900 focus:outline-none">
-                                    Edit Profile
+                                    @lang('Edit Profile')
                                 </div>
                             </a>
                         </div>

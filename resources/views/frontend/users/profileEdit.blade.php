@@ -15,13 +15,13 @@
             <div class="px-4 sm:px-0">
                 <h3 class="text-xl font-semibold leading-6 text-gray-800">@lang('Edit Profile')</h3>
                 <p class="mt-1 text-sm text-gray-600">
-                    This information will be displayed publicly so be careful what you share.
+                    @lang('This information will be displayed publicly so be careful what you share.')
                 </p>
 
                 <div class="pt-4 text-center">
                     <a href='{{ route("frontend.users.profile", encode_id($$module_name_singular->id)) }}'>
                         <div class="w-full font-semibold text-sm px-6 py-2 outline transition ease-in duration-200 rounded text-gray-500 bg-gray-100 hover:bg-gray-800 hover:text-white border-1 border-gray-900 focus:outline-none">
-                            @lang(' View Profile')
+                            @lang('View Profile')
                         </div>
                     </a>
                 </div>
@@ -81,7 +81,7 @@
                     <div class="col-span-6 sm:col-span-2">
 
                         <label class="block text-sm font-medium text-gray-700">
-                            Photo
+                            @lang('Photo')
                         </label>
 
                         <span class="mt-1 inline-block h-24 w-24 object-cover rounded overflow-hidden bg-gray-100">
@@ -99,7 +99,7 @@
                             <input class="relative m-0 block w-full min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-clip-padding px-3 py-[0.32rem] text-base font-normal text-neutral-700 transition duration-300 ease-in-out file:-mx-3 file:-my-[0.32rem] file:overflow-hidden file:rounded-none file:border-0 file:border-solid file:border-inherit file:bg-neutral-100 file:px-3 file:py-[0.32rem] file:text-neutral-700 file:transition file:duration-150 file:ease-in-out file:[border-inline-end-width:1px] file:[margin-inline-end:0.75rem] hover:file:bg-neutral-200 focus:border-primary focus:text-neutral-700 focus:shadow-te-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:file:bg-neutral-700 dark:file:text-neutral-100 dark:focus:border-primary" aria-describedby="avatar" id="avatar" name="avatar" type="file">
                         </div>
                         <div class="mt-1 text-sm text-gray-400" id="view_model_avatar_help">
-                            Upload an image as profile picture.
+                            @lang('Upload an image as profile picture.')
                         </div>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
             <div class="px-4 sm:px-0">
                 <h3 class="text-lg font-medium leading-6 text-gray-800">Personal Info</h3>
                 <p class="mt-1 text-sm text-gray-600">
-                    Information of this block will not be displayed publicly.
+                    @lang('Information of this block will not be displayed publicly.')
                 </p>
             </div>
         </div>
@@ -165,7 +165,7 @@
                 </div>
                 <div class="mt-4 px-4 text-end sm:px-6">
                     <button type="submit" class="inline-flex w-full justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                        Save
+                        @lang('Save')
                     </button>
                 </div>
             </div>
@@ -186,7 +186,7 @@
                 <div class="px-4 sm:px-0">
                     <h3 class="text-lg font-medium leading-6 text-gray-800">Account Settings</h3>
                     <p class="mt-1 text-sm text-gray-600">
-                        Update account information.
+                        @lang('Update account information.')
                     </p>
                 </div>
             </div>
@@ -196,7 +196,7 @@
                         <div class="col-span-6 text-center">
                             <a href="{{ route('frontend.users.changePassword', encode_id($$module_name_singular->id)) }}">
                                 <div class="w-full font-semibold text-sm px-6 py-2 outline transition ease-in duration-200 rounded text-gray-500 hover:bg-gray-800 hover:text-white border-1 border-gray-900 focus:outline-none">
-                                    Change Password
+                                    @lang('Change Password')
                                 </div>
                             </a>
                         </div>
