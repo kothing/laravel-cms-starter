@@ -43,7 +43,7 @@
                         <div class="flex flex-row items-center my-4">
                             <img class="w-5 h-5 sm:w-8 sm:h-8 rounded-full" src="{{asset('images/avatars/'.rand(1, 8).'.jpg')}}" alt="" />
             
-                            <a href='{{ route("frontend.users.profile", $$module_name_singular->created_by) }}'>
+                            <a href='{{ route("frontend.users.profile", encode_id($$module_name_singular->created_by)) }}'>
                                 <h6 class="text-muted text-sm small ml-2 mb-0">
                                     {{ $$module_name_singular->created_by_name }}
                                 </h6>

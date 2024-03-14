@@ -20,7 +20,7 @@
 
                 <div class="pt-4 text-center">
                     <a href='{{ route("frontend.users.profile", encode_id($$module_name_singular->id)) }}'>
-                        <div class="w-full font-semibold text-sm px-6 py-2 transition ease-in duration-200 rounded text-gray-500 hover:bg-gray-800 hover:text-white border-1 border-gray-900 focus:outline-none">
+                        <div class="w-full font-semibold text-sm px-6 py-2 outline transition ease-in duration-200 rounded text-gray-500 bg-gray-100 hover:bg-gray-800 hover:text-white border-1 border-gray-900 focus:outline-none">
                             @lang(' View Profile')
                         </div>
                     </a>
