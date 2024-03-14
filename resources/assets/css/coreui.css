@@ -8237,12 +8237,12 @@ fieldset:disabled .btn {
     --cui-sidebar-nav-link-border: 0 solid var(--cui-sidebar-nav-link-border-color);
     --cui-sidebar-nav-link-border-radius: 0;
     --cui-sidebar-nav-link-active-color: rgba(255, 255, 255, .87);
-    --cui-sidebar-nav-link-active-bg: rgba(255, 255, 255, .05);
+    --cui-sidebar-nav-link-active-bg: rgba(0, 0, 0, .15);
     --cui-sidebar-nav-link-active-icon-color: rgba(255, 255, 255, .87);
     --cui-sidebar-nav-link-disabled-color: rgba(255, 255, 255, .38);
     --cui-sidebar-nav-link-disabled-icon-color: rgba(255, 255, 255, .6);
-    --cui-sidebar-nav-link-hover-color: rgba(255, 255, 255, .87);
-    --cui-sidebar-nav-link-hover-bg: rgba(255, 255, 255, .05);
+    --cui-sidebar-nav-link-hover-color: rgba(255, 255, 255, .90);
+    --cui-sidebar-nav-link-hover-bg: rgba(0, 0, 0, .15);
     --cui-sidebar-nav-link-hover-icon-color: rgba(255, 255, 255, .87);
     --cui-sidebar-nav-icon-width: 4rem;
     --cui-sidebar-nav-icon-height: 1.25rem;
