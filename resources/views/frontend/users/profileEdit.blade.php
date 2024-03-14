@@ -250,7 +250,7 @@
                     <div class="grid grid-cols-6 gap-6">
                         <div class="col-span-6 text-center">
                             <a href="{{ route('frontend.users.changePassword', encode_id($$module_name_singular->id)) }}">
-                                <div class="w-full font-semibold text-sm px-6 py-2 transition ease-in duration-200 rounded text-gray-500 hover:bg-gray-800 hover:text-white border-1 border-gray-900 focus:outline-none">
+                                <div class="w-full font-semibold text-sm px-6 py-2 outline transition ease-in duration-200 rounded text-gray-500 hover:bg-gray-800 hover:text-white border-1 border-gray-900 focus:outline-none">
                                     Change Password
                                 </div>
                             </a>
