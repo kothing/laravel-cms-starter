@@ -132,11 +132,11 @@
             {
                 "render": function (data, type, row) {
                     if (data == 0) {
-                        return'<span class="badge bg-warning text-dark">'.__("Unpublished").'</span>';
+                        return'<span class="badge bg-warning text-dark">{{__("Unpublished")}}</span>';
                     } else if (data == 1) {
-                        return'<span class="badge bg-success">'.__("Published").'</span>';
+                        return'<span class="badge bg-success">{{__("Published")}}</span>';
                     } else if(data == 2) {
-                        return'<span class="badge bg-danger">'.__("Draft").'</span>';
+                        return'<span class="badge bg-danger">{{__("Draft")}}</span>';
                     } else {
                         return "";
                     }

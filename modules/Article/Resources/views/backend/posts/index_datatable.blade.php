@@ -132,11 +132,13 @@
             {
                 "render": function (data, type, row) {
                     if (data == 0) {
-                        return "@lang('Unpublished')";
+                        return'<span class="badge bg-warning text-dark">{{__("Unpublished")}}</span>';
                     } else if (data == 1) {
-                        return "@lang('Published')";
+                        return'<span class="badge bg-success">{{__("Published")}}</span>';
                     } else if(data == 2) {
-                        return "@lang('Draft')";
+                        return'<span class="badge bg-danger">{{__("Draft")}}</span>';
+                    } else {
+                        return "";
                     }
                 },
                 "targets": 3

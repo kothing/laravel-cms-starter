@@ -132,11 +132,11 @@
             {
                 "render": function (data, type, row) {
                     if (data == 'Active') {
-                        return'<span class="badge bg-success">'.__("Active").'</span>';
+                        return'<span class="badge bg-success">{{__("Active")}}</span>';
                     } else if (data == 'Inactive') {
-                        return'<span class="badge bg-warning text-dark">'.__("Inactive").'</span>';
+                        return'<span class="badge bg-warning text-dark">{{__("Inactive")}}</span>';
                     } else if(data == 'Draft') {
-                        return'<span class="badge bg-danger">'.__("Draft").'</span>';
+                        return'<span class="badge bg-danger">{{__("Draft")}}</span>';
                     } else {
                         return "";
                     }
