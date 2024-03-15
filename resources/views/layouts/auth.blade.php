@@ -12,9 +12,6 @@
 
     <title>{{ $title }} - {{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-
     <!-- Styles -->
     @stack('before-styles')
     <link rel="stylesheet" href="{{ asset('css/base.css') }}">
