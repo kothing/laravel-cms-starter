@@ -28,17 +28,17 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
         @foreach ($posts as $post)
         @php
-        $details_url = route("frontend.posts.show",[encode_id($post->id), $post->slug]);
+        $detail_url = route("frontend.posts.show",[encode_id($post->id), $post->slug]);
         @endphp
 
         <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
             @if($post->featured_image != "")
-            <a href="{{$details_url}}">
+            <a href="{{$detail_url}}">
                 <img class="rounded-t-lg" src="{{$post->featured_image}}" alt="{{$post->name}}" />
             </a>
             @endif
             <div class="p-5 flex flex-col items-stretch">
-                <a href="{{$details_url}}">
+                <a href="{{$detail_url}}">
                     <h2 class="mb-2 text-2xl tracking-tight text-gray-900 dark:text-white">
                         {{$post->name}}
                     </h2>
@@ -48,7 +48,7 @@
                 </p>
 
                 <div class="text-end">
-                    <a href="{{$details_url}}" class="inline-flex items-center text-sm text-gray-700 hover:text-gray-100 bg-gray-200 hover:bg-gray-700 py-2 px-3 rounded">
+                    <a href="{{$detail_url}}" class="inline-flex items-center text-sm text-gray-700 hover:text-gray-100 bg-gray-200 hover:bg-gray-700 py-2 px-3 rounded">
                         @lang('Read more')
                         <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>

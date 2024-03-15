@@ -10,19 +10,19 @@
     <ul class="w-full py-3">
         @foreach ($recentPosts as $row)
         @php
-        $details_url = route("frontend.posts.show",[encode_id($row->id), $row->slug]);
+        $detail_url = route("frontend.posts.show",[encode_id($row->id), $row->slug]);
         @endphp
         <li class="flex items-center flex-row flex-1 transition duration-500 ease-in-out transform hover:-translate-y-1 px-4 py-3">
             @if($row->featured_image != "")     
             <div class="flex flex-col h-10 justify-center items-center mr-4">
-                <a href="{{$details_url}}" class="block relative">
+                <a href="{{$detail_url}}" class="block relative">
                     <img alt="{{ $row->name }}" src="{{$row->featured_image}}" class="mx-auto object-cover rounded h-10 " />
                 </a>
             </div>
             @endif
             <div class="flex-1">
                 <div class="font-medium">
-                    <a href="{{$details_url}}">
+                    <a href="{{$detail_url}}">
                         {{ $row->name }}
                     </a>
                 </div>

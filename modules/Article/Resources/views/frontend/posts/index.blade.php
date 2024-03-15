@@ -25,10 +25,10 @@
             <div class="grid grid-cols-1 gap-6">
                 @foreach ($$module_name as $$module_name_singular)
                     @php
-                        $details_url = route("frontend.$module_name.show",[encode_id($$module_name_singular->id), $$module_name_singular->slug]);
+                        $detail_url = route("frontend.$module_name.show",[encode_id($$module_name_singular->id), $$module_name_singular->slug]);
                     @endphp
                     <x-frontend.list 
-                        :url="$details_url" 
+                        :url="$detail_url" 
                         :name="$$module_name_singular->name" 
                         :image="$$module_name_singular->featured_image"
                     >
