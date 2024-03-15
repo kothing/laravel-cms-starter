@@ -64,7 +64,7 @@ class BackendBaseController extends Controller
 
         return view(
             "{$module_path}.{$module_name}.index_datatable",
-            compact('module_title', 'module_name', "{$module_name}", 'module_icon', 'module_name_singular', 'module_action')
+            compact('module_title', 'module_name', "$module_name", 'module_icon', 'module_name_singular', 'module_action')
         );
     }
 
@@ -124,7 +124,7 @@ class BackendBaseController extends Controller
         $page_heading = label_case($module_title);
         $title = $page_heading.' '.label_case($module_action);
 
-        $$module_name = $module_model::select('id', 'name', 'updated_at');
+        $$module_name = $module_model::select('id', 'name', 'status', 'created_at', 'updated_at');
 
         $data = $$module_name;
 
@@ -230,7 +230,7 @@ class BackendBaseController extends Controller
 
         return view(
             "{$module_path}.{$module_name}.show",
-            compact('module_title', 'module_name', 'module_path', 'module_icon', 'module_name_singular', 'module_action', "{$module_name_singular}")
+            compact('module_title', 'module_name', 'module_path', 'module_icon', 'module_name_singular', 'module_action', "$module_name_singular")
         );
     }
 
@@ -258,7 +258,7 @@ class BackendBaseController extends Controller
 
         return view(
             "{$module_path}.{$module_name}.edit",
-            compact('module_title', 'module_name', 'module_path', 'module_icon', 'module_action', 'module_name_singular', "{$module_name_singular}")
+            compact('module_title', 'module_name', 'module_path', 'module_icon', 'module_action', 'module_name_singular', "$module_name_singular")
         );
     }
 
@@ -354,7 +354,7 @@ class BackendBaseController extends Controller
 
         return view(
             "{$module_path}.{$module_name}.trash",
-            compact('module_title', 'module_name', 'module_path', "{$module_name}", 'module_icon', 'module_name_singular', 'module_action')
+            compact('module_title', 'module_name', 'module_path', "$module_name", 'module_icon', 'module_name_singular', 'module_action')
         );
     }
 

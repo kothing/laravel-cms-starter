@@ -27,9 +27,9 @@ class PageFactory extends Factory
         return [
             'name'              => substr($this->faker->text(15), 0, -1),
             'slug'              => '',
+            'status'            => 1,
             'description'       => $this->faker->paragraph,
             'content'           => $this->faker->paragraphs(rand(5, 7), true),
-            'status'            => 1,
             'meta_title' => '',
             'meta_keywords' => '',
             'meta_description' => '',
