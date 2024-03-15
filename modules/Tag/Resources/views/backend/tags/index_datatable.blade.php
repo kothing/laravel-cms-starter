@@ -134,11 +134,11 @@
             {
                 "render": function (data, type, row) {
                     if (data == 'Active') {
-                        return'<span class="badge bg-success">@lang("Active")</span>';
+                        return'<span class="badge bg-success">'.__("Active").'</span>';
                     } else if (data == 'Inactive') {
-                        return'<span class="badge bg-warning text-dark">@lang("Inactive")</span>';
+                        return'<span class="badge bg-warning text-dark">'.__("Inactive").'</span>';
                     } else if(data == 'Draft') {
-                        return'<span class="badge bg-danger">@lang("Draft")</span>';
+                        return'<span class="badge bg-danger">'.__("Draft").'</span>';
                     } else {
                         return "";
                     }

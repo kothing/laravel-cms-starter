@@ -144,7 +144,7 @@
             $field_placeholder = __("Select an option");
             $required = "";
             $select_options = [
-                'Article' => 'Article',
+                // 'Article' => 'Article',
                 // 'Feature' => 'Feature',
                 // 'News' => 'News',
             ];
