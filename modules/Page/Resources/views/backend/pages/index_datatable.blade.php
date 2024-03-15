@@ -55,6 +55,9 @@
                                 @lang("page::list.name")
                             </th>
                             <th>
+                                @lang("page::list.status")
+                            </th>
+                            <th>
                                 @lang("page::list.updated_at")
                             </th>
                             <th class="text-end">
@@ -110,6 +113,11 @@
                 name: 'name'
             },
             {
+                data: 'status',
+                name: 'status',
+                orderable: false
+            },
+            {
                 data: 'updated_at',
                 name: 'updated_at'
             },
@@ -119,6 +127,22 @@
                 orderable: false,
                 searchable: false
             }
+        ],
+        columnDefs: [
+            {
+                "render": function (data, type, row) {
+                    if (data == 0) {
+                        return'<span class="badge bg-warning text-dark">@lang("Unpublished")</span>';
+                    } else if (data == 1) {
+                        return'<span class="badge bg-success">@lang("Published")</span>';
+                    } else if(data == 2) {
+                        return'<span class="badge bg-danger">@lang("Draft")</span>';
+                    } else {
+                        return "";
+                    }
+                },
+                "targets": 2
+            },
         ]
     });
 </script>

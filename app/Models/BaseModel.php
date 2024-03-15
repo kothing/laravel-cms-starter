@@ -65,19 +65,19 @@ class BaseModel extends Model implements HasMedia
 
         switch ($this->attributes['status']) {
             case '0':
-                $return_string = '<span class="badge bg-danger">Inactive</span>';
+                $return_string = '<span class="badge bg-danger">@lang("Inactive")</span>';
                 break;
 
             case '1':
-                $return_string = '<span class="badge bg-success">Active</span>';
+                $return_string = '<span class="badge bg-success">@lang("Active")</span>';
                 break;
 
             case '2':
-                $return_string = '<span class="badge bg-warning text-dark">Pending</span>';
+                $return_string = '<span class="badge bg-warning text-dark">@lang("Pending")</span>';
                 break;
 
             default:
-                $return_string = '<span class="badge bg-primary">Status:'.$this->status.'</span>';
+                $return_string = '<span class="badge bg-primary">@lang("Status"):'.$this->status.'</span>';
                 break;
         }
 

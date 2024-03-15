@@ -156,7 +156,7 @@ $module_icon = "fa-solid fa-list-check";
             var date = $(this).data('log-date');
             deleteLogForm.find('input[name=date]').val(date);
             deleteLogModal.find('.modal-body p').html(
-                'Are you sure you want to <span class="badge bg-danger">DELETE</span> this log file <span class="badge text-bg-warning">' + date + '</span> ?'
+                'Are you sure you want to <span class="badge bg-danger">@lang("DELETE")</span> this log file <span class="badge text-bg-warning">' + date + '</span> ?'
             );
 
             deleteLogModal.modal('show');

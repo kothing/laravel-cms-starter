@@ -57,6 +57,9 @@
                             <th>
                                 @lang("article::list.category")
                             </th>
+                            <th>
+                                @lang("article::list.status")
+                            </th>
                             <th class="text-end">
                                 @lang("article::list.action")
                             </th>
@@ -114,11 +117,30 @@
                 name: 'category_name'
             },
             {
+                data: 'status',
+                name: 'status',
+                orderable: false,
+            },
+            {
                 data: 'action',
                 name: 'action',
                 orderable: false,
                 searchable: false
             }
+        ],
+        columnDefs: [
+            {
+                "render": function (data, type, row) {
+                    if (data == 0) {
+                        return "@lang('Unpublished')";
+                    } else if (data == 1) {
+                        return "@lang('Published')";
+                    } else if(data == 2) {
+                        return "@lang('Draft')";
+                    }
+                },
+                "targets": 3
+            },
         ]
     });
 </script>

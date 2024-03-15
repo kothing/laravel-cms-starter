@@ -19,15 +19,15 @@ trait UserPresenter
         $return_string = '';
         switch ($this->status) {
             case '1':
-                $return_string = '<span class="badge bg-success">Active</span>';
+                $return_string = '<span class="badge bg-success">@lang("Active")</span>';
                 break;
 
             case '2':
-                $return_string = '<span class="badge bg-warning text-dark">Blocked</span>';
+                $return_string = '<span class="badge bg-warning text-dark">@lang("Blocked")</span>';
                 break;
 
             default:
-                $return_string = '<span class="badge bg-primary">Status:'.$this->status.'</span>';
+                $return_string = '<span class="badge bg-primary">@lang("Status"):'.$this->status.'</span>';
                 break;
         }
 
@@ -42,10 +42,10 @@ trait UserPresenter
     public function getConfirmedLabelAttribute()
     {
         if ($this->email_verified_at !== null) {
-            return '<span class="badge bg-success">Confirmed</span>';
+            return '<span class="badge bg-success">@lang("Confirmed")</span>';
         }
 
-        return '<span class="badge bg-danger">Not Confirmed</span>';
+        return '<span class="badge bg-danger">@lang("Not Confirmed")</span>';
     }
 
     /**

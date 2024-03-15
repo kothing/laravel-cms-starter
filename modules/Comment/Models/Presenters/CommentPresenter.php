@@ -21,19 +21,19 @@ trait CommentPresenter
     {
         switch ($this->status) {
             case '0':
-                return '<span class="badge bg-warning text-dark">Pending</span>';
+                return '<span class="badge bg-warning text-dark">@lang("Pending")</span>';
                 break;
 
             case '1':
-                return '<span class="badge bg-success">Pubished</span>';
+                return '<span class="badge bg-success">@lang("Pubished")</span>';
                 break;
 
             case '2':
-                return '<span class="badge bg-danger">Rejected</span>';
+                return '<span class="badge bg-danger">@lang("Rejected")</span>';
                 break;
 
             default:
-                return '<span class="badge bg-primary">Status:'.$this->status.'</span>';
+                return '<span class="badge bg-primary">@lang("Status"):'.$this->status.'</span>';
                 break;
         }
     }
