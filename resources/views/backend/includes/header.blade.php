@@ -17,7 +17,7 @@ $notifications_latest = optional($notifications)->take(5);
                 </a>
             </li>
         </ul>
-        <ul class="header-nav ms-auto">
+        <ul class="header-nav ms-3">
             <li class="nav-item dropdown">
                 <a class="nav-link" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="fa-regular fa-bell"></i>

@@ -54,7 +54,7 @@
 
     @endswitch
 
-modules/Tag/Resources/lang/en/list.php
+@endif
 
 <!-- Meta -->
 <!--
