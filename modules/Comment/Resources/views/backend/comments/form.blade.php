@@ -145,7 +145,7 @@ if (isset($$module_name_singular)) {
         if($('.select2-users').length > 0) {
             $('.select2-users').select2({
                 theme: "bootstrap4",
-                placeholder: "-- Select an option --",
+                placeholder: "Select an option",
                 minimumInputLength: 0,
                 allowClear: true,
                 ajax: {
@@ -169,7 +169,7 @@ if (isset($$module_name_singular)) {
         if($('.select2-posts').length > 0) {
             $('.select2-posts').select2({
                 theme: "bootstrap4",
-                placeholder: "-- Select an option --",
+                placeholder: "Select an option",
                 minimumInputLength: 0,
                 allowClear: true,
                 ajax: {

@@ -61,8 +61,8 @@
         <div class="row">
             <div class="col">
                 <small class="float-end text-muted">
-                    Updated: {{$$module_name_singular->updated_at->diffForHumans()}},
-                    Created at: {{$$module_name_singular->created_at->isoFormat('LLLL')}}
+                    @lang("Updated"): {{$$module_name_singular->updated_at->diffForHumans()}},
+                    @lang("Created at"): {{$$module_name_singular->created_at->isoFormat('LLLL')}}
                 </small>
             </div>
         </div>

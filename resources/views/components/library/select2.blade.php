@@ -12,7 +12,7 @@
         if($('.select2').length > 0) {
             $('.select2').select2({
                 theme: 'bootstrap4',
-                placeholder: '-- Select an option --',
+                placeholder: 'Select an option',
             });
         }
     });

@@ -73,7 +73,7 @@
                         <div class="row">
                             <div class="col-4">
                                 <div class="form-group">
-                                    {{ html()->button($text = "<i class='fas fa-save'></i> Save", $type = 'submit')->class('btn btn-success') }}
+                                    {{ html()->button($text = "<i class='fas fa-save'></i>".__("Save"), $type = 'submit')->class('btn btn-success') }}
                                 </div>
                             </div>
                         </div>
