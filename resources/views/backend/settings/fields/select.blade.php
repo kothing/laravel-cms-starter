@@ -4,11 +4,13 @@ $required_mark = ($required != "") ? '<span class="text-danger"> <strong>*</stro
 @endphp
 
 <div class="form-group mb-3 {{ $errors->has($field['name']) ? ' has-error' : '' }}">
-    <label for="{{ $field['name'] }}" class='form-label'> <strong>{{ __($field['label']) }}</strong> ({{ $field['name'] }})</label> {!! $required_mark !!}
-    <select name="{{ $field['name'] }}" class="form-control {{ Arr::get( $field, 'class') }} {{ $errors->has($field['name']) ? ' is-invalid' : '' }}" id="{{ $field['name'] }}" {{ $required }}>
-        @foreach(Arr::get($field, 'options', []) as $val => $label)
-            <option @if( old($field['name'], setting($field['name'])) == $val ) selected  @endif value="{{ $val }}">{{ $label }}</option>
-        @endforeach
-    </select>
+    <label class="form-label" for="{{ $field['name'] }}"> <strong>{{ __($field['label']) }}</strong> ({{ $field['name'] }})</label> {!! $required_mark !!}
+    <div class="form-input">
+        <select name="{{ $field['name'] }}" class="form-control {{ Arr::get( $field, 'class') }} {{ $errors->has($field['name']) ? ' is-invalid' : '' }}" id="{{ $field['name'] }}" {{ $required }}>
+            @foreach(Arr::get($field, 'options', []) as $val => $label)
+                <option @if( old($field['name'], setting($field['name'])) == $val ) selected  @endif value="{{ $val }}">{{ $label }}</option>
+            @endforeach
+        </select>
+    </div>
     @if ($errors->has($field['name'])) <small class="invalid-feedback">{{ $errors->first($field['name']) }}</small> @endif
 </div>

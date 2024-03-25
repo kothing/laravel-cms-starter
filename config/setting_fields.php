@@ -25,13 +25,17 @@ return [
                 'value' => 'Built with ♥ from Laravel', // default value if you want
             ],
             [
-                'type' => 'checkbox', // input fields type
+                'type' => 'radio', // input fields type
                 'data' => 'text', // data type, string, int, boolean
                 'name' => 'show_copyright', // unique name for field
                 'label' => 'Show Copyright', // you know what label it is
                 'rules' => '', // validation rule of laravel
                 'class' => '', // any class for input
                 'value' => '1', // default value if you want
+                'options' => [
+                    0 => 'Show',
+                    1 => 'Hidden'
+                ]
             ],
         ],
     ],

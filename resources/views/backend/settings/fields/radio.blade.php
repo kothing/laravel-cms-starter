@@ -8,15 +8,9 @@ $required_mark = ($required != "") ? '<span class="text-danger"> <strong>*</stro
         <strong>{{ __($field['label']) }}</strong> ({{ $field['name'] }}) {!! $required_mark !!}
     </label>
     <div class="form-input">
-        <input 
-            type="{{ $field['type'] }}"
-            name="{{ $field['name'] }}"
-            value="{{ old($field['name'], setting($field['name'])) }}"
-            class="form-control {{ Arr::get( $field, 'class') }} {{ $errors->has($field['name']) ? ' is-invalid' : '' }}"
-            id="{{ $field['name'] }}"
-            placeholder="{{ $field['label'] }}" 
-            {{ $required }}
-        >
+        @foreach(Arr::get($field, 'options', []) as $val => $label)
+            <input type="radio" @if( old($field['name'], setting($field['name'])) == $val ) checked @endif name="{{ $field['name'] }}" value="{{ $val }}"> {{ $label }}
+        @endforeach
     </div>
     @if ($errors->has($field['name'])) <small class="invalid-feedback">{{ $errors->first($field['name']) }}</small> @endif
 </div>
