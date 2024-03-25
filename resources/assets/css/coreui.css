@@ -2,8 +2,7 @@
 
 /*!
  * CoreUI  v4.3.2 (https://coreui.io)
- * Copyright (c) 2023 creativeLabs Łukasz Holeczek
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * https://github.com/coreui/coreui/
  */
 :root {
     --cui-blue: #0d6efd;
@@ -47,10 +46,8 @@
     --cui-dark-rgb: 79, 93, 115;
     --cui-white-rgb: 255, 255, 255;
     --cui-black-rgb: 0, 0, 21;
-    --cui-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --cui-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --cui-gradient: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
-    --cui-body-font-family: var(--cui-font-sans-serif);
     --cui-body-font-size: 1rem;
     --cui-body-font-weight: 400;
     --cui-body-line-height: 1.5;
@@ -3448,37 +3445,37 @@ fieldset:disabled .btn {
 }
 
 .btn-secondary {
-    --cui-btn-color: #000015;
+    --cui-btn-color: #efefef;
     --cui-btn-bg: #9da5b1;
     --cui-btn-border-color: #9da5b1;
-    --cui-btn-hover-color: rgba(44, 56, 74, .95);
+    --cui-btn-hover-color: rgb(255 255 255 / 95%);
     --cui-btn-hover-bg: #acb3bd;
     --cui-btn-hover-border-color: #a7aeb9;
     --cui-btn-focus-shadow-rgb: 133, 140, 154;
-    --cui-btn-active-color: rgba(44, 56, 74, .95);
+    --cui-btn-active-color: rgb(255 255 255 / 95%);
     --cui-btn-active-bg: #b1b7c1;
     --cui-btn-active-border-color: #a7aeb9;
     --cui-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, .125);
-    --cui-btn-disabled-color: #000015;
+    --cui-btn-disabled-color: #fefefe;
     --cui-btn-disabled-bg: #9da5b1;
-    --cui-btn-disabled-border-color: #9da5b1
+    --cui-btn-disabled-border-color: #9da5b1;
 }
 
 .btn-success {
-    --cui-btn-color: #000015;
+    --cui-btn-color: #f8f8f8;
     --cui-btn-bg: #2eb85c;
     --cui-btn-border-color: #2eb85c;
-    --cui-btn-hover-color: rgba(44, 56, 74, .95);
+    --cui-btn-hover-color: rgb(255 255 255 / 98%);
     --cui-btn-hover-bg: #4dc374;
     --cui-btn-hover-border-color: #43bf6c;
     --cui-btn-focus-shadow-rgb: 39, 156, 81;
-    --cui-btn-active-color: rgba(44, 56, 74, .95);
+    --cui-btn-active-color: rgb(255 255 255 / 98%);
     --cui-btn-active-bg: #58c67d;
     --cui-btn-active-border-color: #43bf6c;
     --cui-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, .125);
-    --cui-btn-disabled-color: #000015;
+    --cui-btn-disabled-color: #fcfcfc;
     --cui-btn-disabled-bg: #2eb85c;
-    --cui-btn-disabled-border-color: #2eb85c
+    --cui-btn-disabled-border-color: #2eb85c;
 }
 
 .btn-danger {
@@ -6528,7 +6525,6 @@ fieldset:disabled .btn {
     z-index: var(--cui-tooltip-zindex);
     display: block;
     margin: var(--cui-tooltip-margin);
-    font-family: var(--cui-font-sans-serif);
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -6649,7 +6645,6 @@ fieldset:disabled .btn {
     z-index: var(--cui-popover-zindex);
     display: block;
     max-width: var(--cui-popover-max-width);
-    font-family: var(--cui-font-sans-serif);
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
