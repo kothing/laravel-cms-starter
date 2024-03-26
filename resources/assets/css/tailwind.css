@@ -219,7 +219,7 @@ hr {
 }
 
 [type=text]:focus,input:where(:not([type])):focus,[type=email]:focus,[type=url]:focus,[type=password]:focus,[type=number]:focus,[type=date]:focus,[type=datetime-local]:focus,[type=month]:focus,[type=search]:focus,[type=tel]:focus,[type=time]:focus,[type=week]:focus,[multiple]:focus,textarea:focus,select:focus {
-    outline: 2px solid transparent;
+    outline: 1px solid transparent;
     outline-offset: 2px;
     --tw-ring-inset: var(--tw-empty, );
     --tw-ring-offset-width: 0px;
@@ -311,7 +311,7 @@ select {
 }
 
 [type=checkbox]:focus,[type=radio]:focus {
-    outline: 2px solid transparent;
+    outline: 1px solid transparent;
     outline-offset: 2px;
     --tw-ring-inset: var(--tw-empty, );
     --tw-ring-offset-width: 2px;
@@ -549,7 +549,7 @@ select {
 }
 
 .form-input:focus,.form-textarea:focus,.form-select:focus,.form-multiselect:focus {
-    outline: 2px solid transparent;
+    outline: 1px solid transparent;
     outline-offset: 2px;
     --tw-ring-inset: var(--tw-empty, );
     --tw-ring-offset-width: 0px;
@@ -1727,6 +1727,10 @@ select {
     padding-left: 1.5rem
 }
 
+.pr-1 {
+    padding-right: .25rem
+}
+
 .pr-2 {
     padding-right: .5rem
 }
@@ -2052,31 +2056,27 @@ select {
  * = = =
  */
 .shadow-sm {
-    --tw-shadow: 0 3px 3px 0 rgb(0 0 0 / .05);
+    --tw-shadow: 0 2px 4px 0 rgb(0 0 0 / .08);
     --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
-    transition: 0.2s box-shadow;
 }
 
 .shadow {
-    --tw-shadow: 0 4px 6px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);
+    --tw-shadow: 0 6px 10px 0 rgb(0 0 0 / .08), 0 1px 2px -1px rgb(0 0 0 / .08);
     --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
-    transition: 0.2s box-shadow;
 }
 
 .shadow-md {
-    --tw-shadow: 0 8px 10px 2px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1);
+    --tw-shadow: 0 10px 16px -1px rgb(0 0 0 / .08), 0 2px 4px -2px rgb(0 0 0 / .08);
     --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
-    transition: 0.2s box-shadow;
 }
 
 .shadow-lg {
-    --tw-shadow: 0 10px 16px 3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+    --tw-shadow: 0 14px 22px -2px rgb(0 0 0 / .08), 0 4px 6px -4px rgb(0 0 0 / .08);
     --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
-    transition: 0.2s box-shadow;
 }
 
 
@@ -2416,10 +2416,9 @@ select {
  * = = =
  */
 .hover\:shadow-lg:hover {
-    --tw-shadow: 0 10px 16px 3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+    --tw-shadow: 0 14px 22px -2px rgb(0 0 0 / .08), 0 4px 6px -4px rgb(0 0 0 / .08);
     --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
-    transition: 0.2s box-shadow;
 }
 
 
@@ -2539,7 +2538,7 @@ select {
  * = = =
  */
 .focus\:outline-none:focus {
-    outline: 2px solid transparent;
+    outline: 1px solid transparent;
     outline-offset: 2px
 }
 

@@ -3,3 +3,77 @@
 @import "backend_variables";
 
 @import "backend_custom";
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b3b3b3;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e4e7eb;
+}
+
+/**
+ * a link
+ */
+a {
+    text-decoration: none !important;
+}
+
+/**
+ * Sidebar
+ */
+.sidebar-nav::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar-nav::-webkit-scrollbar-track {
+    background-color: rgba(44, 56, 74, .65);
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb {
+    background-color: rgba(35, 45, 60, .95);
+}
+
+.sidebar-nav .nav-group-items .nav-link .nav-icon {
+    margin-left: calc(var(--cui-sidebar-nav-icon-width) * -0.65);
+}
+
+.sidebar-nav .nav-group-items .nav-link .nav-icon:before {
+    font-size: 80%;
+}
+
+/**
+ * wrapper
+ */
+.wrapper {
+    width: 100%;
+    padding-left: var(--cui-sidebar-occupy-start, 0);
+    will-change: auto;
+    transition: padding .15s;
+}
+
+
+/**
+ * select2
+ */
+.select2-container--default .select2-selection--multiple {
+    padding: 0;
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+    height: 22px;
+    margin: 4px 6px;
+}
+
+
+/**
+ * collapse
+ */
+.collapse.show {
+    visibility: visible;
+}
