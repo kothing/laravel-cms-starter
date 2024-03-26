@@ -116,7 +116,7 @@ class CategoriesController extends BackendBaseController
         $$module_name_singular = $module_model::findOrFail($id);
 
         $data = $request->all();
-        $data['slug'] = $data['slug'] ? slugify($data['slug']) : $data['name'];
+        $data['slug'] = $data['slug'] ? slugify($data['slug']) : slugify($data['name']);
 
         $$module_name_singular->update($data);
 
